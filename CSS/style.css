@@ -1,0 +1,2331 @@
+body {
+  padding-top: 56px; /* Altura de la barra de navegación */
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  background-color: #ffffff; /* Cambia esto al color que desees para la barra de navegación */
+}
+
+.navbar-item {
+  cursor: pointer;
+  text-decoration: none;
+  margin: 0 10px;
+  transition: color 0.3s ease, border-radius 0.3s ease; /* Transición suave de color y bordes en 0.3 segundos */
+}
+
+.navbar-item:hover {
+  background-color: #1a3757d1; /* Azul al pasar el ratón */
+  color: #ffffff !important; /* Texto blanco al pasar el ratón */
+  border-radius: 5px; /* Bordes redondeados al pasar el ratón */
+  transition: color .4s ease-in-out, background-color .4s ease-in-out;
+}
+
+.navbar-brand img {
+  max-height: 40px; /* Ajusta la altura de tu logo */
+}
+
+.navbar-nav {
+  width: 100%;
+  justify-content: flex-end; /* Alinea los elementos a la derecha */
+}
+
+.navbar-nav .nav-item {
+  text-align: center; /* Justifica el texto en el centro */
+}
+
+.navbar-nav .nav-item a {
+  font-weight: bold; /* Texto en negritas */
+  font-size: 15pt;
+}
+
+
+/* CSS Inicio */
+
+.inicio-imagen1 {
+  height: 100vh; /* Ocupa el 100% de la altura de la pantalla */
+  background-size: cover; 
+  background-position: center; 
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  background-image: url('images/slide2_bg.jpg');
+}
+
+.animate-section {
+  animation: fadeInDown 1s;
+}
+
+@keyframes fadeInDown {
+  0% {
+      opacity: 0;
+      transform: translateY(-20px);
+  }
+  100% {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+#inicio-img {
+  position: relative;
+}
+
+#inicio-img img {
+  max-width: 100%;
+  height: auto;
+}
+
+#inicio-img .text-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: rgb(255, 255, 255);
+}
+
+
+
+#inicio h1 {
+  font-size: 4rem;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 700;
+  color: #ffffff;
+}
+#inicio h2 {
+  font-size: 3rem;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 700;
+  color: #ffffff;
+  text-align: center;
+}
+
+#inicio p {
+  font-family: 'roboto', sans-serif;
+  font-size: 1.2rem;
+  font-style: italic;
+  text-align: center;
+  white-space: normal; /* Evita que el texto se divida en varias líneas */
+  overflow: hidden; /* Oculta cualquier contenido que desborde */
+  color: #ffffff;
+}
+
+.img-pathology{
+width: 470px;
+}
+
+.arrow-down-container {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  width: 100%;
+}
+
+.arrow-down {
+  font-size: 30px;
+  cursor: pointer;
+  color: #acacac; /* Color gris para la flecha */
+  transition: color 0.3s ease;
+}
+
+#inicio.collapsed {
+  height: 100px; /* Ajusta la altura según sea necesario */
+  overflow: hidden;
+}
+
+
+.arrow-down:active {
+  color: #141414; /* Cambia el color al hacer clic (efecto sombreado) */
+}
+
+/* Estilos para el primer container */
+.text-container-gray {
+  background-color: #dad5d560; 
+  max-width: 100%; /* Ancho del contenedor */
+  padding: 30px;
+  
+}
+
+.text-container-gray p {
+  font-size: 1.5rem; /* Tamaño de la fuente */
+  font-family: 'Open Sans', sans-serif; /* Fuente */
+  text-align: center;
+  line-height: 1.5;
+}
+
+/* Estilos para el segundo container */
+.text-container-white {
+  background-color: #ffffff; 
+  padding: 30px;
+  font-size: 1.5rem; /* Tamaño de la fuente */
+  font-family: 'Open Sans', sans-serif; /* Fuente */
+  width: 80%; /* Ancho del contenedor */
+  margin: auto; /* Centrar el contenedor */
+  line-height: 1.5;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Estilos para la linea */
+.blue-line {
+  border-top: 3px solid rgba(23, 63, 114, 1);
+  margin: 20px auto;
+  max-width: 70%;
+}
+
+/* Estilos para las imágenes dentro de los contenedores */
+.image-container {
+  max-height: 500px; /* Establece la altura fija para los contenedores de las imágenes */
+  max-width: 500px;
+  overflow: hidden;
+}
+
+/* Estilos para las imágenes dentro de los contenedores */
+.image-container img {
+  width: 100%; /* Ajusta la imagen al 100% del ancho del contenedor */
+  height: 0 auto; /* Establece la altura fija para todas las imágenes */
+  object-fit: cover; /* Ajusta la imagen manteniendo las proporciones y cubriendo el contenedor */
+}
+
+#container-images {
+  margin-top: 2rem; /* Ajusta el espacio superior según tus necesidades */
+  margin-bottom: 2rem; /* Ajusta el espacio inferior según tus necesidades */
+}
+
+#container-images p {
+  color: rgba(23, 63, 114, 1); 
+  text-align: center; /* Centra el texto */
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+}
+
+/* Estilos para la nueva sección */
+.nueva-seccion-section {
+  padding: 50px 0;
+  color: #ffffff; /* Color del texto dentro de la nueva sección */
+}
+
+#prodSeccion h1 {
+  font-size: 3rem;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 700;
+}
+/* Estilos para el contenedor del texto y elementos */
+.text-container {
+  margin-bottom: 30px;
+}
+
+/* Estilos para la línea blanca */
+.white-line {
+  border: 1.5px solid #fff; /* Color de la línea blanca */
+}
+
+/* Estilos para la imagen */
+.img-fluid {
+  height: auto;
+}
+
+/* Estilos para los subtítulos */
+.section-subheading1 {
+  color: #ffffff;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-family: 'Oswald', sans-serif;
+  text-align: left;
+}
+
+/* Estilos para el botón */
+.btn-primary {
+  background-color: #fff; /* Color de fondo del botón */
+  color: rgba(23, 63, 114, 1); /* Color del texto del botón */
+  padding: 10px 20px;
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+  text-decoration: none;
+  max-width: 90%;
+}
+
+.btn-conoce-mas {
+  width: 590px; /* ajustar el ancho */
+}
+
+/* Estilos personalizados para la sección "Cómo funciona" */
+#funSeccion {
+  background-color: #f0f0f0;
+}
+
+#funSeccion .section-heading {
+  color: #000000; /* Cambiar color del título */
+  font-size: 3rem; /* Cambiar tamaño del título */
+  font-family: 'Oswald', sans-serif;
+  font-weight: 700;
+}
+
+#funSeccion p {
+  color: #ffffff; /* Cambiar color del texto */
+  font-size: 1.5rem; /* Cambiar tamaño del texto */
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1.5;
+}
+
+/* Estilos adicionales para el carrusel */
+#funSeccion .swiper-container {
+  margin-top: 70px; /* Agregar espacio superior al carrusel */
+  overflow-x: hidden;
+}
+
+#funSeccion .swiper-slide {
+  position: relative; /* Agregar posición relativa para el contenedor de la diapositiva */
+}
+
+#funSeccion .swiper-slide img {
+  max-width: 1000px; /* Hacer que la imagen ocupe el 100% del contenedor */
+  max-height: 500px;
+  height: auto;
+}
+
+#funSeccion .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #ffffff;
+  font-size: 1.5rem;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+#funSeccion .swiper-slide:hover .overlay {
+  opacity: 1;
+}
+
+/* Estilos para la navegación del carrusel */
+
+#funSeccion .swiper-button-next,
+#funSeccion .swiper-button-prev {
+  color: #007bff;
+  position: absolute; /* Agregar posición absoluta para centrar los botones */
+  top: 68%; /* Colocar los botones en la mitad superior del contenedor de la diapositiva */
+  transform: translateY(-50%); /* Centrar verticalmente los botones */
+}
+
+#funSeccion .swiper-button-next {
+  right: 40%; /* Ajustar la posición del botón siguiente */
+  top: 108%;
+  bottom: 0%;
+}
+
+#funSeccion .swiper-button-prev {
+  left: 40%; /* Ajustar la posición del botón anterior */
+  right: 15%; /* Ajustar la posición del botón siguiente */
+  top: 108%;
+  bottom: 0%;
+}
+
+/* Estilos para la cuarta sección */
+#cuartaSeccion .blue-line-custom {
+  border: 2px solid rgba(23, 63, 114, 1); /* Cambiar color y grosor de la línea azul */
+  width: 100%; /* Cambiar el tamaño de la línea */
+  margin: 40 auto 40px auto; /* Centrar la línea y agregar espacio inferior */
+}
+
+#cuartaSeccion .section-heading-custom {
+  color: #000000; /* Cambiar color del título */
+  font-family: 'Oswald', sans-serif; /* Cambiar fuente del título */
+  font-size: 3rem; /* Cambiar tamaño del título */
+  font-weight: 700;
+}
+
+#cuartaSeccion p {
+  font-size: 1.5rem;
+  font-family: 'Open Sans', sans-serif;
+}
+
+#cuartaSeccion {
+  text-align: center;
+  padding: 50px 0; 
+}
+
+#cuartaSeccion .container {
+  max-width: 1500px; /* Ajustar el ancho máximo del contenedor según tus necesidades */
+  margin: 0 auto; /* Centrar el contenedor en la página */
+}
+
+#cuartaSeccion .image-container {
+  overflow: visible; /* Ocultar el desbordamiento de la imagen fuera del contenedor */
+  max-width: 100%; /* Asegurarse de que la imagen no sea más ancha que el contenedor */
+}
+
+#cuartaSeccion img {
+  width: 1000px;
+  height: auto;
+  max-height: none; /* Ajustar la altura máxima a "none" para permitir desbordamiento hacia arriba y abajo */
+  margin-top: 1%; /* Ajustar el margen superior para centrar la imagen en el desbordamiento hacia arriba */
+  margin-bottom: 1px; /* Ajustar el margen inferior para permitir desbordamiento hacia abajo */
+  overflow: visible; /* Permitir desbordamiento visible */
+  transition: filter 0.3s ease-in-out;
+}
+
+#flujomod img{
+  width: 120px;
+  height: 50px;
+}
+
+#flujopac img{
+  width: 80px;
+  height: 100px;
+}
+
+
+#cuartaSeccion img:hover {
+  filter: hue-rotate(30deg);
+}
+
+.element{
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  border-radius:50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%)
+}
+
+.element img{
+  max-width: 100%;
+  height: auto;
+  transition: transform 0.3s ease-in-out;
+}
+
+.element img:hover{
+  transform: scale(1.3);
+}
+
+#circle{
+  position: relative;
+  width: 400px;
+  height:340px;
+  margin: auto;
+  transform: translate(-2%,-45%)
+  
+}
+
+
+/* Quinta seccion */
+
+.blue-line-custom-center {
+border: 2px solid rgba(23, 63, 114, 1);
+width: 100%;
+margin: 40 auto 40px auto;
+}
+
+/* Añadir línea azul personalizada después del título */
+.blue-line-custom {
+border: 2px solid rgba(23, 63, 114, 1);
+width: 100%;
+margin: 40 auto 40px auto;
+}
+
+/* Personalizar el título de la nueva sección */
+.section-heading-custom {
+font-size: 3rem;
+font-family: 'Oswald', sans-serif;
+font-weight: 700;
+}
+
+/* Añadir un margen superior a la quinta sección */
+.quinta-seccion-section {
+margin-top: 20px;
+}
+
+.img-fullsize {
+width: 1000px;
+height: auto;
+}
+
+.image-container {
+overflow: hidden;
+}
+
+.image-container img {
+width: 200%; /* Ajusta el porcentaje según sea necesario para que se desborde */
+height: 270px;
+}
+
+
+/* tecnologia */
+
+
+
+.tecnologias-section {
+padding: 10px;
+}
+.tecnologias-section h1 {
+font-size: 3rem;
+font-family: 'Oswald', sans-serif;
+color: rgba(23, 63, 114, 1);
+}
+
+.image-container1t img {
+margin-top: -8%;
+width: 90%;
+height: auto;
+}
+.image-container2t img {
+margin-top: 18%;
+width: 70%;
+height: auto;
+}
+.image-container3t img {
+margin-top: 15%;
+width: 65%;
+}
+.image-container4t img {
+margin-top: 5%;
+width: 40%;
+}
+.image-container5t img {
+margin-top: 18%;
+width: 40%;
+}
+.image-container6t img {
+margin-top: 15%;
+width: 35%;
+margin-bottom: -20%;
+}
+.image-container7t img {
+margin-top: 15%;
+width: 65px;
+height: 64px;
+margin-bottom: -20%;
+}
+.image-container8t img {
+margin-top: 20%;
+width: 50%;
+margin-bottom: -20%;
+}
+
+.image-container1t img, .image-container2t img, .image-container3t img, 
+.image-container4t img, .image-container5t img, .image-container6t img, 
+.image-container7t img, .image-container8t img {
+  transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
+  transform: scale(1);
+}
+
+.image-container1t img:hover, .image-container2t img:hover, 
+.image-container3t img:hover, .image-container4t img:hover, 
+.image-container5t img:hover, .image-container6t img:hover, 
+.image-container7t img:hover, .image-container8t img:hover {
+  transform: scale(1.3);
+}
+
+#quintaSeccion{
+  margin-top: -50px;
+}
+
+
+/* Sexta seccion */
+
+/* Línea azul centrada */
+.blue-line-custom-center-sixth {
+border: 2px solid rgba(23, 63, 114, 1);
+width: 100%;
+margin: 40 auto 40px auto;
+}
+
+/* Añadir línea azul personalizada después del título */
+.blue-line-custom-sixth {
+border: 2px solid rgba(23, 63, 114, 1);
+width: 100%;
+
+}
+
+/* Personalizar el título de la nueva sección */
+.section-heading-custom-sixth {
+font-size: 3rem;
+font-family: 'Oswald', sans-serif;
+font-weight: 700;
+}
+
+/* Añadir un margen superior a la sexta sección */
+.sexta-seccion-section {
+margin-top: 20px;
+}
+
+
+.image-container-sixth img {
+width: 100%; /* Ajusta el porcentaje según sea necesario */
+height: auto;
+margin-left: 0%; /* Ajusta el valor según sea necesario para centrar la imagen */
+margin-top: -90%;
+}
+
+.blue-title-sixth {
+color: rgba(23, 63, 114, 1); /* Color azul del título */
+font-size: 3rem; /* Tamaño de fuente del título */
+text-align: center; /* Alineación del título */
+font-family: 'Oswald',sans-serif;
+}
+
+
+#sextaSeccion .container {
+  margin-top: -50px;
+}
+
+#sextaSeccion .img-inter{
+  margin-top: -5px;
+}
+
+#sextaSeccion p{
+font-size: 1rem; /* Tamaño de fuente del título */
+text-align: left; /* Alineación del título */
+font-family: 'Open Sans', sans-serif;
+padding-bottom: 20px;
+}
+
+#sextaSeccion .row{
+padding-bottom: 10px;
+}
+
+#sextaSeccion .usuarios1, .usuarios2, .usuarios3, .usuarios4 {
+display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+
+}
+
+#img-ofrecemos{
+margin-top: -50px;;
+}
+
+#img-ofrecemos2{
+margin-top: -50px;
+}
+
+#img-ofrecemos4{
+margin-top: -50px;
+}
+
+
+
+/* Footer CSS */
+/* Estilos para el Footer */
+.footer-section {
+background-color: rgba(23, 63, 114, 1);
+color: #ffffff; /* Texto en color blanco */
+/* padding: 30px 0; /* Espaciado interno del footer */
+}
+
+.footer-section h4 {
+color: #ffffff; /* Color blanco para los encabezados dentro del footer */
+}
+
+/* Estilos para los iconos de redes sociales */
+.footer-section i {
+font-size: 1.5rem;
+margin-right: 10px;
+color: #ffffff; /* Color blanco para los iconos de redes sociales */
+}
+.footer-section h4 {
+  font-size: 1.3rem;
+}
+/* Agrega cualquier estilo adicional que desees para el footer */
+.footer-section a {
+text-decoration: underline; /* Elimina el subrayado predeterminado de los enlaces */
+color: #ffffff; /* Color del texto del enlace, puedes ajustarlo según tus preferencias */
+}
+.footer-section .fa-brands, .footer-section .fab {
+  color: #ffffff; /* Color inicial de los iconos */
+  transition: color 0.3s ease; /* Transición suave al pasar el mouse */
+}
+
+.fab.fa-facebook-square:hover{
+  color:rgb(121, 177, 250);
+  transform: scale(1.5);
+}
+
+.fa-brands.fa-square-x-twitter:hover{
+  color:rgb(121, 177, 250);
+  transform: scale(1.5);
+}
+
+.fab.fa-instagram-square:hover{
+  color:rgb(121, 177, 250);
+  transform: scale(1.5);
+}
+
+.fab.fa-youtube-square:hover{
+  color:rgb(121, 177, 250);
+  transform: scale(1.5);
+}
+
+.fab.fa-linkedin:hover{
+  color:rgb(121, 177, 250);
+  transform: scale(1.5);
+}
+
+
+
+/* Productos */
+
+
+.encabezado-img img{
+width: 100%;
+height: 900px;
+  margin-top: -100px;
+}
+
+.encabezado-img h1{
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: rgb(255, 255, 255);
+  font-size: 4rem;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 700;
+}
+
+
+  
+/* Productos - Nuestros productos*/
+#productos{
+  margin-top: -100px;
+}
+
+#productospat{
+  background-color: rgba(23, 63, 114, 1);
+}
+
+#modulos{
+  padding-top: 25px;
+}
+ .container{
+  padding-top: 30px;
+  padding-bottom: 30px;
+ }
+
+#contenido{
+  display: none;
+}
+
+#productos img{
+  width: 570px;
+  margin-top: -150px;
+}
+
+#productos h1{
+  text-align: center;
+  font-family: 'Oswald', sans-serif;
+  font-size: 3rem;
+}
+
+#productos details{
+  background-color: rgba(23, 63, 114, 1);
+  color: #ffffff;
+  text-align: center;
+  font-family: 'Open Sans', sans-serif; /* Fuente */
+  font-size: 1rem;
+  border-radius: 10px;
+}
+
+#productos details:hover{
+  background-color: rgb(8, 192, 248);
+  color: #000;
+  transition: background-color 0.4s ease-in-out;
+}
+
+#productos p{
+  text-align: justify;
+  padding-top: 20px;
+  font-family: 'Open Sans', sans-serif; /* Fuente */
+  font-size: 1rem;
+  background-color: #ffffff;
+  color: #000000;
+}
+
+#productospat h1{
+  text-align: center;
+  color: #ffffff;
+  font-family: 'Oswald', sans-serif;
+  font-size: 3rem;
+}
+
+#productospat details{
+  background-color: #ffffff;
+  color: #000;
+  text-align: center;
+  font-family: 'Open Sans', sans-serif; /* Fuente */
+  font-size: 1rem;
+  border-radius: 10px;
+}
+
+#productospat details:hover{
+  background-color: rgb(8, 192, 248);
+  transition: background-color 0.4s ease-in-out;
+}
+
+#productospat p{
+  text-align: justify;
+  background-color: rgba(23, 63, 114, 1);
+  padding-top: 20px;
+  color: #ffffff;
+  font-family: 'Open Sans', sans-serif; /* Fuente */
+  font-size: 1rem;
+}
+
+#productos .btn-custom{
+  background-color: rgba(23, 63, 114, 1);
+  color: #ffffff;
+  font-family: 'Open Sans', sans-serif; /* Fuente */
+  font-size: 1.5rem;
+}
+
+.btn-custom{
+  background-color: #ffffff;
+  font-family: 'Open Sans', sans-serif; /* Fuente */
+  font-size: 1.5rem;
+}
+
+#contenidop {
+  display: none;
+}
+
+/*Productos - Modulos*/
+
+#modulos h1{
+  text-align: center;
+  font-family: 'Oswald', sans-serif; /* Fuente */
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+#modulos img{
+  width: 260px;
+  height: 160px;
+  margin-bottom: 20px;
+}
+
+#modulos h5{
+  font-family: 'Open Sans', sans-serif; /* Fuente */
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+#modulos p{
+  text-align: justify;
+  font-family: 'Open Sans', sans-serif; /* Fuente */
+  font-size: 1rem;
+}
+
+/*Productos - Modalidades adicionales*/
+
+#modalidad_adicional{
+  background-color: rgba(23, 63, 114, 1);
+  color: white;
+  padding-bottom: 40px;
+}
+
+#modalidad_adicional .line{
+  border-top: 3px solid rgb(255, 255, 255);
+  margin: 20px auto;
+  width: 100%;
+}
+
+#modalidad_adicional .carousel-item{
+  position: relative;
+  transition: opacity 0.5s ease; 
+  opacity: 1; 
+}
+
+#modalidad_adicional .carousel-item.carousel-item-start {
+  opacity: 0; 
+}
+
+#modalidad_adicional .carousel-item.carousel-item-end {
+  opacity: 0; 
+}
+
+#modalidad_adicional .carousel-item img {
+  height: 400px; 
+  object-fit: cover;
+}
+
+#modalidad_adicional button{
+  background-color: transparent;
+  border: transparent;
+}
+
+
+#modalidad_adicional .carousel-caption {
+  position: absolute;
+  width: 75%;
+  height: 100%;  
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(15, 15, 15, 0.808); 
+  padding: 20px;
+  color: white;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+  z-index: 1;
+  display: flex; 
+  align-items: center; 
+  justify-content: center; 
+  text-align: center;
+}
+
+
+#modalidad_adicional .carousel-item:hover .carousel-caption {
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.carousel-caption h5,
+.carousel-caption p {
+  margin: 0; 
+}
+
+#modalidad_adicional h1{
+  padding-top: 30px;
+  margin-bottom: -20px;
+  text-align: center;
+  font-family: 'Oswald', sans-serif; 
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+#modalidad_adicional h3{
+  text-align: center;
+  font-family: 'Open Sans', sans-serif; /* Fuente */
+  font-size: 1rem;
+}
+#modalidad_adicional img{
+  width: 360px;
+  height: 200px;
+  margin-bottom: 20px;
+}
+
+#modalidad_adicional h5{
+  font-family: 'Open Sans', sans-serif; /* Fuente */
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+#modalidad_adicional p{
+  text-align: justify;
+  font-family: 'Open Sans', sans-serif; /* Fuente */
+  font-size: 1rem;
+}
+
+/*Productos_Diagnostico*/
+
+#diagnostico{
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+#diagnostico h1{
+  text-align: center;
+  font-family: 'Oswald', sans-serif; /* Fuente */
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+#diagnostico h3{
+  text-align: center;
+  font-family: 'Open Sans', sans-serif; /* Fuente */
+  font-size: 1rem;
+}
+
+/*Productos_Visualizador*/
+
+#visualizador{
+  background-color: #d1d1d1;  
+}
+
+
+#visualizador h2{
+  color: rgba(23, 63, 114, 1);
+  font-family: 'Oswald', sans-serif; /* Fuente */
+  font-size: 3rem; 
+}
+
+#visualizador p{
+  padding-top: 30px;
+  text-align: justify;
+  font-family: 'Open Sans', sans-serif; /* Fuente */
+  font-size: 1rem;
+}
+
+#visualizador h5{
+  background-color: #ffffff;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  text-align: center;
+  font-family: 'Open Sans', sans-serif; /* Fuente */
+  font-size: 1rem;
+}
+
+/*Modalidades*/
+
+.encabezado-mod img{
+  width: 100%;
+  height: 500px;
+  filter: brightness(60%);
+  object-fit: cover;
+}
+
+.encabezado-mod h1{
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: rgb(255, 255, 255);
+  font-size: 4rem;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 700;
+}
+
+
+
+#encabezadomodalidades p{
+  padding-top: 30px;
+  padding-bottom: 30px;
+  text-align: center;
+  font-family: 'Open Sans', sans-serif; /* Fuente */
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+/*Modalidades - Ultrasonido*/
+
+#ultrasonido {
+  
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+#ultrasonido img{
+  width: 550px;
+  height: 220px;
+  margin-bottom: 20px;
+}
+
+#ultrasonido h5{
+  font-family: 'Open Sans', sans-serif; /* Fuente */
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+#ultrasonido p{
+  font-family: 'Open Sans', sans-serif; /* Fuente */
+  font-size: 1rem;
+  text-align: justify;
+}
+
+/*Modalidades - Radiografía Digital*/
+
+#dx{
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: rgba(23, 63, 114, 1);
+  color: #ffffff;
+}
+
+#dx img{
+  width: 550px;
+  height: 220px;
+  margin-bottom: 20px;
+}
+
+#dx h5{
+  font-family: 'Open Sans', sans-serif; /* Fuente */
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+#dx p{
+  font-family: 'Open Sans', sans-serif; /* Fuente */
+  font-size: 1rem;
+  text-align: justify;
+}
+
+/*Modalidades - Electrocardiograma*/
+
+#electro {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+#electro img{
+  width: 550px;
+  height: 220px;
+  margin-bottom: 20px;
+}
+
+#electro h5{
+  font-family: 'Open Sans', sans-serif; /* Fuente */
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+#electro p{
+  font-family: 'Open Sans', sans-serif; /* Fuente */
+  font-size: 1rem;
+  text-align: justify;
+}
+
+/*Modalidades - Resonancia Magnetica*/
+
+#resonancia {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: rgba(23, 63, 114, 1);
+  color: #ffffff;
+}
+
+#resonancia img{
+  width: 550px;
+  height: 220px;
+  margin-bottom: 20px;
+}
+
+#resonancia h5{
+  font-family: 'Open Sans', sans-serif; /* Fuente */
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+#resonancia p{
+  font-family: 'Open Sans', sans-serif; /* Fuente */
+  font-size: 1rem;
+  text-align: justify;
+}
+
+/*Modalidades - Mamografía*/
+
+#mamografia {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+#mamografia img{
+  width: 550px;
+  height: 220px;
+  margin-bottom: 20px;
+}
+
+#mamografia h5{
+  font-family: 'Open Sans', sans-serif; /* Fuente */
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+#mamografia p{
+  font-family: 'Open Sans', sans-serif; /* Fuente */
+  font-size: 1rem;
+  text-align: justify;
+}
+
+/*Modalidades - Tomografía Computarizada*/
+
+#tomografia {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: rgba(23, 63, 114, 1);
+  color: #ffffff;
+}
+
+#tomografia img{
+  width: 550px;
+  height: 220px;
+  margin-bottom: -44%;
+}
+
+#tomografia h5{
+  font-family: 'Open Sans', sans-serif; /* Fuente */
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+#tomografia p{
+  font-family: 'Open Sans', sans-serif; /* Fuente */
+  font-size: 1rem;
+  text-align: justify;
+}
+
+/*Modalidades - Radiografía Computarizada*/
+
+#cr {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+#cr img{
+  width: 550px;
+  height: 220px;
+  margin-bottom: -47%;
+}
+
+#cr h5{
+  font-family: 'Open Sans', sans-serif; /* Fuente */
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+#cr p{
+  font-family: 'Open Sans', sans-serif; /* Fuente */
+  font-size: 1.1rem;
+  text-align: justify;
+}
+
+
+
+
+
+/* Nosotros CSS */
+
+.encabezado-nosotros img{
+  width: 100%;
+  height: 700px;
+  filter: brightness(70%)
+}
+
+.encabezado-nosotros {
+  position: relative;
+  text-align: center;
+}
+
+.texto-superpuesto {
+position: absolute;
+top: 70%;
+left: 50%;
+transform: translate(-50%, -50%);
+z-index: 1; 
+}
+
+#nosotros h1 {
+  color: #ffffff;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 700;
+  font-size: 4rem;
+  margin-top: -150px;
+}
+
+.linea-azul {
+content: "";
+display: block;
+height: 12px; 
+width: 100%; 
+background-color: rgba(23, 63, 114, 1);
+margin: 35px auto; 
+}
+
+/* Estilos para la sección visionMision */
+
+#visionMision {
+padding: 50px; 
+}
+
+.texto-centrado {
+text-align: center;
+}
+
+h2 {
+color: #000000;
+font-size: 3rem;
+font-weight: bold;
+font-style: italic;
+font-family: 'roboto', sans-serif;
+}
+
+.linea-azul2 {
+border: 2px solid rgba(23, 63, 114, 1);
+width: 70%;
+margin: 20px auto 20px auto;
+}
+
+.texto-modificado {
+font-size: 1rem; 
+font-family: 'Open Sans', sans-serif; 
+color: #000000;
+}
+
+.imagen-vision-mision {
+width: 100%; 
+height: 40%;
+}
+
+.textos-bajo-imagen {
+margin-top: 20px; 
+}
+
+.texto-container {
+max-width: 100%; 
+margin: 0 auto; 
+}
+
+.vision, .mision {
+font-size: 1rem;
+text-align: justify;
+}
+
+/* Estilos para la sección de valores */
+#valores {
+background-color: #ffffff; 
+padding: 20px 0; 
+}
+
+.texto-container {
+padding: 20px;
+margin-top: 50%;
+vertical-align: middle;
+margin: 50% 0;
+text-align: left;
+}
+
+#valores h2 {
+color: #000000;
+font-size: 1rem; 
+line-height: 1.5;
+font-family: 'Open Sans', sans-serif;
+}
+
+.texto-lista {
+font-size: 1rem;
+line-height: 1.5;
+font-family: 'Open Sans', sans-serif;
+}
+
+
+.overflow-hidden {
+overflow-x: visible;
+}
+
+/* Objetivo */
+#objetivo {
+padding: 10px 0;
+text-align: center;
+}
+#objetivo p {
+font-size: 1rem;
+color: #000000;
+text-align: center;
+font-family: 'opens sans', sans-serif;
+}
+
+.linea-azul3 {
+border: 2px solid rgba(23, 63, 114, 1); 
+width: 100%; 
+margin: 40px auto; 
+}
+
+#equipo {
+background-color: #dad5d560; 
+padding: 20px; 
+margin-top: -0.5%;
+}
+
+#equipo p {
+font-size: 1rem; 
+color: #000000; 
+text-align: center;
+font-family: 'open sans', sans-serif;
+margin-left: 0%;
+}
+#nuestroeq h2{
+font-size: 3rem;
+text-align: center;
+font-family: 'Oswald', sans-serif;
+font-weight: bold;
+margin-top: -2%;
+font-style: normal;
+}
+
+#nuestroeq h1{
+color: rgba(23, 63, 114, 1) ;
+font-size: 1rem;
+text-align: center;
+font-family: 'Open Sans', sans-serif;
+font-weight: bold;
+}
+
+#nuestroeq p{
+font-size: 1rem;
+text-align: center;
+font-family: 'Open Sans', sans-serif;
+}
+
+#nuestroeq img{
+width: 285px;
+height: 292px;
+padding-bottom: 20px;
+
+}
+
+.swiper-container-e {
+width: 100%;
+overflow: hidden;
+}
+
+.swiper-slide {
+text-align: center;
+}
+
+.swiper-slide img {
+max-width: 100%;
+height: auto;
+}
+
+
+
+
+/* Contacto */ 
+
+.encabezado-con img{
+width: 100%;
+height: 700px;
+filter: brightness(60%)
+}
+
+.encabezado-con h1{
+position: absolute;
+top: 37%;
+left: 50%;
+transform: translate(-50%, -50%);
+text-align: center;
+color: rgb(255, 255, 255);
+font-size: 4rem;
+font-family: 'Oswald', sans-serif;
+font-weight: 700;
+}
+
+
+
+#encabezadocontacto p{
+padding-top: 30px;
+padding-bottom: 30px;
+text-align: center;
+font-family: 'Open Sans', sans-serif; /* Fuente */
+font-size: 1.5rem;
+font-weight: 700;
+}
+
+#contactos img{
+width: 500px;
+height: 250px;
+}
+
+#contactos h1{
+padding-top: 30px;
+text-align: center;
+font-family: 'Open Sans', sans-serif; /* Fuente */
+font-size: 1.5rem;
+font-weight: 700;
+}
+
+#contactos p{
+text-align: center;
+font-family: 'Open Sans', sans-serif; /* Fuente */
+font-size: 1.3rem;
+}
+
+.map_container{
+text-align: center;
+padding-bottom: 30px;
+}
+
+/*Privacidad*/
+
+#encabezadopriv{
+  padding-top: 30px;
+  font-size: 4rem;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 700;
+}
+
+#privacidad{
+  margin-top: -50px;
+}
+
+#privacidad p{
+  font-family: 'Open Sans', sans-serif; /* Fuente */
+  font-size: 1rem;
+}
+
+#privacidad li{
+  font-family: 'Open Sans', sans-serif; /* Fuente */
+  font-size: 1rem;
+}
+
+/*Terminos y Condiciones*/
+
+#encabezadoter{
+  padding-top: 30px;
+  font-size: 4rem;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 700;
+}
+
+#terminos{
+  margin-top: -50px;
+}
+
+#terminos p{
+  font-family: 'Open Sans', sans-serif; /* Fuente */
+  font-size: 1rem;
+}
+
+#terminos li{
+  font-family: 'Open Sans', sans-serif; /* Fuente */
+  font-size: 1rem;
+}
+
+/* Responsive celular*/
+
+@media screen and (max-width: 768px) {
+#inicio h1 {
+  font-size: 2rem;
+}
+#inicio h2 {
+  font-size: 1.5rem;
+  max-width: 90%;
+}
+#inicio p {
+  font-size: 1rem;
+  white-space: break-spaces;
+}
+#funSeccion .swiper-slide img {
+  width: 100%;
+}
+.text-container-gray p {
+  text-align: justify;
+
+}.text-container-white p {
+  text-align: justify;
+}
+#container-images p {
+  margin-top: -15%;
+  margin-bottom: 25%;
+}
+.section-subheading1 {
+  margin-top: -10%;
+  margin-bottom: 10%;
+  text-align: left;
+}
+
+/* Estilos para el botón */
+.btn-primary {
+  margin-left: 5%;
+  margin-top: -5%;
+}
+#cuartaSeccion .image-container {
+  overflow: visible; /* Ocultar el desbordamiento de la imagen fuera del contenedor */
+  max-width: 100%; /* Asegurarse de que la imagen no sea más ancha que el contenedor */
+  margin-bottom: -50%;
+}
+
+#circle{
+  display: none;
+}
+
+.image-container{
+  display: block;
+
+}
+
+#cuartaSeccion img {
+  margin-top: -30px; 
+  margin-bottom: 30px; 
+}
+
+#tecnologias{
+  margin-top: 0px;
+}
+
+#productospat h1{
+  font-size: 1.8rem;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+#visualizador h2{
+  font-size: 1.6rem; 
+}
+
+#visualizador p{
+  padding-top: 4px;
+  font-size: 1.2rem;
+}
+#nosotros h1 {
+  font-size: 3rem;
+  margin-top: -60%;
+}
+.linea-azul {
+content: "";
+display: block;
+height: 12px; /* Altura de la línea */
+width: 110%; /* Longitud de la línea */
+background-color: rgba(23, 63, 114, 1);
+margin: 35px auto; /* Espaciado alrededor de la línea */
+margin-left: -6%;
+}
+h2 {
+  font-size: 1.7rem;
+}
+.linea-azul2 {
+  border: 2px solid rgba(23, 63, 114, 1);
+  width: 110%;
+  margin: 50 auto 50px auto;
+  margin-left: -6%;
+}
+.linea-azul3 {
+  border: 2px solid rgba(23, 63, 114, 1); /* Cambia el color si lo deseas */
+  width: 110%; /* Ajusta el ancho de la línea según tus preferencias */
+  margin: 40px auto; /* Ajusta el margen superior e inferior según tus preferencias */
+  margin-left: -6%;
+}
+.texto-modificado {
+  font-size: 1rem; 
+  text-align: justify;
+  line-height: 1.5;
+}
+
+.imagen-vision-mision {
+  width: 100%; /* Ajusta el ancho de la imagen según tu preferencia */
+  height: auto; /* Ajusta la altura automáticamente para mantener la proporción */
+  margin-top: 20px; /* Ajusta el margen superior de la imagen según tu preferencia */
+}
+
+.textos-bajo-imagen {
+  margin-top: 20px; /* Ajusta el margen superior según tu preferencia */
+}
+
+.texto-container {
+  width: 100%; /* Ajusta el ancho máximo del contenedor según tu preferencia */
+  margin: 0 auto; /* Centra el contenedor horizontalmente */
+}
+
+.empresa, .vision, .mision {
+  font-size: 1rem !important;
+  text-align: justify;
+  margin: 45px;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 10%;
+}
+
+/* Estilos para la sección de valores */
+#valores {
+  background-color: #ffffff; /* Cambia el color de fondo según tus preferencias */
+  padding: 10px 0; /* Ajusta el relleno según tus necesidades */
+  margin-top: -10%;
+}
+#valores img {
+  margin-bottom: -40%;
+}
+
+.texto-container {
+  padding: 10px; /* Ajusta el relleno del contenedor del texto según tus necesidades */
+  margin-bottom: -20%;
+  vertical-align: middle;
+  text-align: center;
+}
+
+#valores h2 {
+  font-size: 1.1rem;
+  font-style: normal;
+  text-align: center;
+  margin-bottom: -5%;
+}
+
+/* Añade una clase para ocultar el desbordamiento horizontal en el contenedor */
+.overflow-hidden {
+  overflow-x: visible;
+}
+
+/* Objetivo */
+#objetivo {
+  padding: 40px;
+  width: 100%;
+  height: auto;
+  margin-top: -30%;
+  margin-bottom: -10%;
+}
+#objetivo p {
+  font-size: 1rem !important;
+  margin-right: -15%;
+  margin-top: -45%;
+}
+#equipo {
+  background-color: #dad5d560; /* Cambia el color de fondo según tus preferencias */
+  padding: 20px; /* Ajusta el relleno según tus preferencias */
+  margin-top: 26%;
+}
+
+#equipo p {
+  font-size: 1rem !important; /* Ajusta el tamaño de fuente según tus preferencias */
+  color: #000000; /* Cambia el color del texto según tus preferencias */
+  text-align: justify;
+}
+.encabezado-mod img{
+  max-width: 200vh;
+  max-height: 100vh;
+}
+
+.encabezado-mod h1{
+  font-size: 3rem;
+}
+
+.encabezado-mod ::after{
+  content: "";
+  display: block;
+  height: 12px; /* Altura de la línea */
+  width: 110%; /* Longitud de la línea */
+  background-color: rgba(23, 63, 114, 1);
+  margin: 35px auto; /* Espaciado alrededor de la línea */
+  margin-left: -6%;
+}
+#ultrasonido {
+  
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+#ultrasonido img{
+  width: 550px;
+  height: 220px;
+  margin-bottom: 20px;
+}
+
+#ultrasonido h5{
+  font-family: 'Open Sans', sans-serif; /* Fuente */
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+#ultrasonido p{
+  font-family: 'Open Sans', sans-serif; /* Fuente */
+  font-size: 1.1rem;
+  text-align: justify;
+}
+
+/*Modalidades - Radiografía Digital*/
+
+#dx{
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: rgba(23, 63, 114, 1);
+  color: #ffffff;
+}
+
+#dx img{
+  width: 550px;
+  height: 220px;
+  margin-bottom: 20px;
+}
+
+#dx h5{
+  font-family: 'Open Sans', sans-serif; /* Fuente */
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+#dx p{
+  font-family: 'Open Sans', sans-serif; /* Fuente */
+  font-size: 1.1rem;
+  text-align: justify;
+}
+
+/*Modalidades - Electrocardiograma*/
+
+#electro {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+#electro img{
+  width: 550px;
+  height: 220px;
+  margin-bottom: 20px;
+}
+
+#electro h5{
+  font-family: 'Open Sans', sans-serif; /* Fuente */
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+#electro p{
+  font-family: 'Open Sans', sans-serif; /* Fuente */
+  font-size: 1.1rem;
+  text-align: justify;
+}
+
+/*Modalidades - Resonancia Magnetica*/
+
+#resonancia {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: rgba(23, 63, 114, 1);
+  color: #ffffff;
+}
+
+#resonancia img{
+  width: 550px;
+  height: 220px;
+  margin-bottom: 20px;
+}
+
+#resonancia h5{
+  font-family: 'Open Sans', sans-serif; /* Fuente */
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+#resonancia p{
+  font-family: 'Open Sans', sans-serif; /* Fuente */
+  font-size: 1.1rem;
+  text-align: justify;
+}
+
+/*Modalidades - Mamografía*/
+
+#mamografia {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+#mamografia img{
+  width: 550px;
+  height: 220px;
+  margin-bottom: 20px;
+}
+
+#mamografia h5{
+  font-family: 'Open Sans', sans-serif; /* Fuente */
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+#mamografia p{
+  font-family: 'Open Sans', sans-serif; /* Fuente */
+  font-size: 1.1rem;
+  text-align: justify;
+}
+
+/*Modalidades - Tomografía Computarizada*/
+
+#tomografia {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: rgba(23, 63, 114, 1);
+  color: #ffffff;
+}
+
+#tomografia img{
+  width: 550px;
+  height: 220px;
+  margin-bottom: -20%;
+}
+
+#tomografia h5{
+  font-family: 'Open Sans', sans-serif; /* Fuente */
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 5%;
+  margin-top: 25%;
+}
+
+#tomografia p{
+  font-family: 'Open Sans', sans-serif; /* Fuente */
+  font-size: 1.1rem;
+  text-align: justify;
+}
+
+/*Modalidades - Radiografía Computarizada*/
+
+#cr {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+#cr img{
+  width: 550px;
+  height: 220px;
+  margin-bottom: -47%;
+}
+
+#cr h5{
+  font-family: 'Open Sans', sans-serif; /* Fuente */
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 5%;
+  margin-top: 50%;
+}
+
+#cr p{
+  font-family: 'Open Sans', sans-serif; /* Fuente */
+  font-size: 1.1rem;
+  text-align: justify;
+}
+#contactos iframe {
+  height: 300px;
+  width: 100%;
+}
+#encabezadocontacto p{
+  padding-top: 30px;
+  padding-bottom: 30px;
+  text-align: center;
+  font-size: 1.5rem;
+}
+.texto-cont {
+  margin-bottom: -10%;
+}
+#objetivo p {
+  font-size: 1.4rem;
+  color: #000000;
+  text-align: justify;
+  font-family: 'Open Sans', sans-serif;
+  margin-left: -15%;
+}
+#objetivo {
+  padding: 50px;
+}
+.linea-azul3 {
+  border: 2px solid rgba(23, 63, 114, 1); /* Cambia el color si lo deseas */
+  width: 100%; /* Ajusta el ancho de la línea según tus preferencias */
+  margin: 20px auto; /* Ajusta el margen superior e inferior según tus preferencias */
+}
+
+.footer-section p {
+  color: #ffffff; /* Color blanco para los encabezados dentro del footer */
+  margin-top: -5%;
+}
+#funSeccion .swiper-button-next {
+  right: 40%; /* Ajustar la posición del botón siguiente */
+  top: 100%;
+  bottom: 0%;
+}
+
+#funSeccion .swiper-button-prev {
+  left: 40%; /* Ajustar la posición del botón anterior */
+  right: 15%; /* Ajustar la posición del botón siguiente */
+  top: 100%;
+  bottom: 0%;
+}
+.tecnologias-section h1 {
+  font-size: 2rem;
+  font-family: 'Oswald', sans-serif;
+  color: rgba(23, 63, 114, 1);
+}
+.image-container1t img {
+  margin-top: -10%;
+  margin-left: -70%;
+  width: 50%;
+  height: auto;
+}
+.image-container2t img {
+  margin-top: -43%;
+  margin-right: -1%;
+  width: 30%;
+  height: auto;
+}
+.image-container3t img {
+  margin-top: -55%;
+  margin-right: -70%;
+  width: 30%;
+}
+.image-container4t img {
+  margin-top: -20%;
+  margin-left: -68%;
+  width: 20%;
+}
+.image-container5t img {
+  margin-top: -33%;
+  width: 25%;
+  margin-right: -3%;
+}
+.image-container6t img {
+  margin-top: -65%;
+  margin-right: -70%;
+  width: 20%;
+}
+.image-container7t img {
+  margin-top: -20%;
+  margin-left: -35%;
+  width: 20%;
+}
+.image-container8t img {
+  margin-top: -35%;
+  margin-right: -35%;
+  width: 30%;
+}
+#nuestroeq h2{
+  font-size: 3rem;
+  text-align: center;
+  font-family: 'Oswald', sans-serif;
+  font-weight: bold;
+  margin-top: -25%;
+  font-style: normal;
+}
+#nuestroeq .linea-azul2 {
+  width: 84%;
+  margin-left: 7%;
+}
+#nuestroeq img{
+  width: 285px;
+  height: 285px;
+  padding-bottom: 20px;
+  
+}
+.encabezado-img h1 {
+  font-size: 3rem;
+}
+.encabezado-con h1 {
+  font-size: 3rem;
+}
+
+.swiper-container-e {
+  width: 100%;
+  overflow: hidden;
+  margin-bottom: -5%;
+}
+
+.swiper-slide {
+  text-align: center;
+}
+
+.swiper-slide img {
+  max-width: 100%;
+  height: auto;
+}
+.footer-section i {
+  font-size: 1.5rem;
+  margin-right: 10px;
+  color: #ffffff; /* Color blanco para los iconos de redes sociales */
+  }
+  .footer-section h4 {
+    font-size: 1.2rem;
+  }
+  
+}
+
+
+/* Responsive tablet */
+
+@media screen and (max-width: 1024px) {
+  #inicio h1 {
+    font-size: 2rem;
+  }
+  #inicio h2 {
+    font-size: 1.5rem;
+    max-width: 90%;
+  }
+  #inicio p {
+    font-size: 1rem;
+    white-space: break-spaces;
+  }
+  #funSeccion .swiper-slide img {
+    width: 100%;
+  }
+  .section-subheading1 {
+    margin-top: 2%;
+    margin-bottom: 2%;
+    text-align: left;
+  }
+  
+  /* Estilos para el botón */
+  .btn-primary {
+    margin-top: 5%;
+  }
+  .text-container-gray p {
+    text-align: justify;
+  
+  }.text-container-white p {
+    text-align: justify;
+  }
+  #ultrasonido {
+    
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  
+  #ultrasonido img{
+    width: 550px;
+    height: 220px;
+    margin-bottom: 20px;
+  }
+  
+  #ultrasonido h5{
+    font-family: 'Open Sans', sans-serif; /* Fuente */
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  
+  #ultrasonido p{
+    font-family: 'Open Sans', sans-serif; /* Fuente */
+    font-size: 1.1rem;
+    text-align: justify;
+  }
+  
+  /*Modalidades - Radiografía Digital*/
+  
+  #dx{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: rgba(23, 63, 114, 1);
+    color: #ffffff;
+  }
+  
+  #dx img{
+    width: 550px;
+    height: 220px;
+    margin-bottom: 20px;
+  }
+  
+  #dx h5{
+    font-family: 'Open Sans', sans-serif; /* Fuente */
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  
+  #dx p{
+    font-family: 'Open Sans', sans-serif; /* Fuente */
+    font-size: 1.1rem;
+    text-align: justify;
+  }
+  
+  /*Modalidades - Electrocardiograma*/
+  
+  #electro {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  
+  #electro img{
+    width: 550px;
+    height: 220px;
+    margin-bottom: 20px;
+  }
+  
+  #electro h5{
+    font-family: 'Open Sans', sans-serif; /* Fuente */
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  
+  #electro p{
+    font-family: 'Open Sans', sans-serif; /* Fuente */
+    font-size: 1.1rem;
+    text-align: justify;
+  }
+  
+  /*Modalidades - Resonancia Magnetica*/
+  
+  #resonancia {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: rgba(23, 63, 114, 1);
+    color: #ffffff;
+  }
+  
+  #resonancia img{
+    width: 550px;
+    height: 220px;
+    margin-bottom: 20px;
+  }
+  
+  #resonancia h5{
+    font-family: 'Open Sans', sans-serif; /* Fuente */
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  
+  #resonancia p{
+    font-family: 'Open Sans', sans-serif; /* Fuente */
+    font-size: 1.1rem;
+    text-align: justify;
+  }
+  
+  /*Modalidades - Mamografía*/
+  
+  #mamografia {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  
+  #mamografia img{
+    width: 550px;
+    height: 220px;
+    margin-bottom: 20px;
+  }
+  
+  #mamografia h5{
+    font-family: 'Open Sans', sans-serif; /* Fuente */
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  
+  #mamografia p{
+    font-family: 'Open Sans', sans-serif; /* Fuente */
+    font-size: 1.1rem;
+    text-align: justify;
+  }
+  
+  /*Modalidades - Tomografía Computarizada*/
+  
+  #tomografia {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: rgba(23, 63, 114, 1);
+    color: #ffffff;
+  }
+  
+  #tomografia img{
+    width: 550px;
+    height: 220px;
+    margin-bottom: -20%;
+  }
+  
+  #tomografia h5{
+    font-family: 'Open Sans', sans-serif; /* Fuente */
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 5%;
+    margin-top: 25%;
+  }
+  
+  #tomografia p{
+    font-family: 'Open Sans', sans-serif; /* Fuente */
+    font-size: 1.1rem;
+    text-align: justify;
+  }
+  
+  /*Modalidades - Radiografía Computarizada*/
+  
+  #cr {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  
+  #cr img{
+    width: 550px;
+    height: 220px;
+    margin-bottom: -20%;
+  }
+  
+  #cr h5{
+    font-family: 'Open Sans', sans-serif; /* Fuente */
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 5%;
+    margin-top: 24%;
+  }
+  
+  #cr p{
+    font-family: 'Open Sans', sans-serif; /* Fuente */
+    font-size: 1.1rem;
+    text-align: justify;
+    margin-top: 1%;
+  }
+  .imagen-vision-mision {
+    width: 100%; /* Ajusta el ancho de la imagen según tu preferencia */
+    height: auto; /* Ajusta la altura automáticamente para mantener la proporción */
+    margin-top: 20px; /* Ajusta el margen superior de la imagen según tu preferencia */
+  }
+  .texto-modificado {
+    font-size: 1rem; 
+    text-align: center;
+    line-height: 1.5;
+  } 
+  .textos-bajo-imagen {
+    margin-top: 20px; /* Ajusta el margen superior según tu preferencia */
+  }
+  
+  .texto-container {
+    width: 100%; /* Ajusta el ancho máximo del contenedor según tu preferencia */
+    margin: 0 auto; /* Centra el contenedor horizontalmente */
+  }
+  
+  .empresa, .vision, .mision {
+    font-size: 1.1rem !important;
+    text-align: justify;
+    margin: 45px;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 6%;
+  }
+  #valores {
+    background-color: #ffffff; /* Cambia el color de fondo según tus preferencias */
+    padding: 10px 0; /* Ajusta el relleno según tus necesidades */
+  }
+  
+  .texto-container {
+    padding: 20px; /* Ajusta el relleno del contenedor del texto según tus necesidades */
+    margin-top: 50%;
+    vertical-align: middle;
+    margin: 50% 0;
+    text-align: left;
+  }
+  
+  #valores h2 {
+    margin-top: -5%;
+    text-align: center;
+  }
+  
+  .texto-lista {
+    font-size: 1.1rem; /* Ajusta el tamaño de la fuente del texto según tus necesidades */
+    justify-content: center;
+    text-align: justify;
+  }
+  
+  /* Añade una clase para ocultar el desbordamiento horizontal en el contenedor */
+  .overflow-hidden {
+    overflow-x: visible;
+  }
+  #objetivo p {
+    font-size: 1.1rem;
+    text-align: justify;
+  }
+  #equipo {
+    background-color: #dad5d560; /* Cambia el color de fondo según tus preferencias */
+    padding: 20px; /* Ajusta el relleno según tus preferencias */
+    margin-top: -1%;
+  }
+  
+  #equipo p {
+    font-size: 1.1rem; /* Ajusta el tamaño de fuente según tus preferencias */
+    color: #000000; /* Cambia el color del texto según tus preferencias */
+    text-align: justify;
+  }
+  .texto-cont {
+    margin-bottom: -7%;
+  }
+  .footer-section i {
+    font-size: 1.5rem;
+    margin-right: 10px;
+    color: #ffffff; /* Color blanco para los iconos de redes sociales */
+    }
+    .footer-section h4 {
+      font-size: 1.2rem;
+    }
+  }
