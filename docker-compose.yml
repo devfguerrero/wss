@@ -8,10 +8,10 @@ services:
     volumes:
       #- ./html:/usr/share/nginx/html
       - ./CSS:/usr/share/nginx/html/CSS
-      - ./images:/usr/share/nginx/html
-      - /contacto.html /usr/share/nginx/html
-      - /index.html /usr/share/nginx/html
-      - /modalidades.html /usr/share/nginx/html
-      - /nosotros.html /usr/share/nginx/html
-      - /productos.html /usr/share/nginx/html
+      - ./images:/user/share/nginx/html
+      - /contacto.html /user/share/nginx/html
+      - /index.html /user/share/nginx/html
+      - /modalidades.html /user/share/nginx/html
+      - /nosotros.html /user/share/nginx/html
+      - /productos.html /user/share/nginx/html
     restart: always

@@ -23,7 +23,7 @@ body {
 }
 
 .navbar-brand img {
-  max-height: 40px; /* Ajusta la altura de tu logo */
+  max-height: 30px; /* Ajusta la altura de tu logo */
 }
 
 .navbar-nav {
@@ -163,11 +163,10 @@ width: 470px;
   padding: 30px;
   font-size: 1.5rem; /* Tamaño de la fuente */
   font-family: 'Open Sans', sans-serif; /* Fuente */
-  width: 80%; /* Ancho del contenedor */
+  width: 100%; /* Ancho del contenedor */
   margin: auto; /* Centrar el contenedor */
   line-height: 1.5;
   margin-top: 20px;
-  margin-bottom: 20px;
   text-align: center;
 }
 
@@ -194,19 +193,18 @@ width: 470px;
 
 #container-images {
   margin-top: 2rem; /* Ajusta el espacio superior según tus necesidades */
-  margin-bottom: 2rem; /* Ajusta el espacio inferior según tus necesidades */
 }
 
 #container-images p {
   color: rgba(23, 63, 114, 1); 
   text-align: center; /* Centra el texto */
-  margin-bottom: 10px;
   font-size: 1.5rem;
 }
 
 /* Estilos para la nueva sección */
 .nueva-seccion-section {
   padding: 50px 0;
+  padding-bottom: 0;
   color: #ffffff; /* Color del texto dentro de la nueva sección */
 }
 
@@ -217,7 +215,7 @@ width: 470px;
 }
 /* Estilos para el contenedor del texto y elementos */
 .text-container {
-  margin-bottom: 30px;
+  margin-bottom: 15px;
 }
 
 /* Estilos para la línea blanca */
@@ -277,7 +275,7 @@ width: 470px;
 
 /* Estilos adicionales para el carrusel */
 #funSeccion .swiper-container {
-  margin-top: 70px; /* Agregar espacio superior al carrusel */
+  margin-top: 40px; /* Agregar espacio superior al carrusel */
   overflow-x: hidden;
 }
 
@@ -356,7 +354,7 @@ width: 470px;
 
 #cuartaSeccion {
   text-align: center;
-  padding: 50px 0; 
+  padding: 25px 0 0 0; 
 }
 
 #cuartaSeccion .container {
@@ -367,6 +365,7 @@ width: 470px;
 #cuartaSeccion .image-container {
   overflow: visible; /* Ocultar el desbordamiento de la imagen fuera del contenedor */
   max-width: 100%; /* Asegurarse de que la imagen no sea más ancha que el contenedor */
+  max-height: 100%;
 }
 
 #cuartaSeccion img {
@@ -445,7 +444,7 @@ font-size: 3rem;
 font-family: 'Oswald', sans-serif;
 font-weight: 700;
 }
-
+ 
 /* Añadir un margen superior a la quinta sección */
 .quinta-seccion-section {
 margin-top: 20px;
@@ -477,6 +476,7 @@ padding: 10px;
 font-size: 3rem;
 font-family: 'Oswald', sans-serif;
 color: rgba(23, 63, 114, 1);
+/* margin-top: 3%; */
 }
 
 .image-container1t img {
@@ -573,11 +573,12 @@ margin-left: 0%; /* Ajusta el valor según sea necesario para centrar la imagen 
 margin-top: -90%;
 }
 
-.blue-title-sixth {
+.blue-title-sixth6 h1{
 color: rgba(23, 63, 114, 1); /* Color azul del título */
 font-size: 3rem; /* Tamaño de fuente del título */
 text-align: center; /* Alineación del título */
 font-family: 'Oswald',sans-serif;
+margin-top: 4%;
 }
 
 
@@ -587,13 +588,6 @@ font-family: 'Oswald',sans-serif;
 
 #sextaSeccion .img-inter{
   margin-top: -5px;
-}
-
-#sextaSeccion p{
-font-size: 1rem; /* Tamaño de fuente del título */
-text-align: left; /* Alineación del título */
-font-family: 'Open Sans', sans-serif;
-padding-bottom: 20px;
 }
 
 #sextaSeccion .row{
@@ -610,16 +604,27 @@ display: flex;
 }
 
 #img-ofrecemos{
-margin-top: -50px;;
+  max-width: 30%;
+  filter: brightness(1.1);
+  mix-blend-mode: multiply;
 }
-
 #img-ofrecemos2{
-margin-top: -50px;
+  max-width: 30%;
+  filter: brightness(1.1);
+  mix-blend-mode: multiply;
 }
-
+#img-ofrecemos3 {
+  max-width: 30%;
+}
 #img-ofrecemos4{
-margin-top: -50px;
+  max-width: 30%;
 }
+#sextaSeccion p{
+  font-size: 1rem; /* Tamaño de fuente del título */
+  text-align: left; /* Alineación del título */
+  font-family: 'Open Sans', sans-serif;
+  padding-left: 20px;
+  }
 
 
 
@@ -683,23 +688,29 @@ color: #ffffff; /* Color del texto del enlace, puedes ajustarlo según tus prefe
 
 /* Productos */
 
-
-.encabezado-img img{
-width: 100%;
-height: 900px;
-  margin-top: -100px;
+.inicio {
+  height: 100vh; /* Ocupa el 100% de la altura de la pantalla */
+  background-size: cover; 
+  background-position: center; 
+  display: flex; 
+  justify-content: center; 
+  align-items: center;
+  background-image: url('images/slide1_bg.jpg');
 }
-
-.encabezado-img h1{
+.encabezado-img {
   position: absolute;
-  top: 40%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
   color: rgb(255, 255, 255);
-  font-size: 4rem;
+}
+
+.encabezado-img h1{
+  color: #ffffff;
   font-family: 'Oswald', sans-serif;
   font-weight: 700;
+  font-size: 4rem;
 }
 
 
@@ -717,8 +728,8 @@ height: 900px;
   padding-top: 25px;
 }
  .container{
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
  }
 
 #contenido{
@@ -986,26 +997,30 @@ height: 900px;
 
 /*Modalidades*/
 
-.encabezado-mod img{
-  width: 100%;
-  height: 500px;
-  filter: brightness(60%);
-  object-fit: cover;
+.inicio {
+  height: 100vh; /* Ocupa el 100% de la altura de la pantalla */
+  background-size: cover; 
+  background-position: center; 
+  display: flex; 
+  justify-content: center; 
+  align-items: center;
+  background-image: url('images/modalidades2.jpg');
 }
-
-.encabezado-mod h1{
+.encabezado-mod {
   position: absolute;
-  top: 30%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
   color: rgb(255, 255, 255);
-  font-size: 4rem;
-  font-family: 'Oswald', sans-serif;
-  font-weight: 700;
 }
 
-
+.encabezado-mod h1{
+  color: #ffffff;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 700;
+  font-size: 4rem;
+}
 
 #encabezadomodalidades p{
   padding-top: 30px;
@@ -1177,7 +1192,7 @@ height: 900px;
 
 #cr {
   padding-top: 30px;
-  padding-bottom: 30px;
+  padding-bottom: 10px;
 }
 
 #cr img{
@@ -1187,40 +1202,110 @@ height: 900px;
 }
 
 #cr h5{
-  font-family: 'Open Sans', sans-serif; /* Fuente */
+  font-family: 'Open Sans', sans-serif; 
   font-size: 3rem;
   font-weight: 700;
 }
 
 #cr p{
-  font-family: 'Open Sans', sans-serif; /* Fuente */
+  font-family: 'Open Sans', sans-serif; 
   font-size: 1.1rem;
   text-align: justify;
 }
 
+#modextra{
+  background-color: #acacac;
+}
 
+#modextra h1{
+  color: rgba(23, 63, 114, 1);
+  font-family: 'Open Sans', sans-serif;
+  font-size: 3rem;
+  text-align: center;
+  font-weight: 700;
+}
+
+#modextra h3{
+  font-family: 'Open Sans', sans-serif; 
+  font-size: 1.1rem;
+  text-align: center;
+}
+
+#modextra .carousel-item{
+  position: relative;
+  transition: opacity 0.5s ease; 
+  opacity: 1; 
+}
+
+#modextra .carousel-item.carousel-item-start {
+  opacity: 0; 
+}
+
+#modextra .carousel-item.carousel-item-end {
+  opacity: 0; 
+}
+
+#modextra .carousel-item img {
+  height: 400px; 
+  object-fit: cover;
+}
+
+#modextra button{
+  background-color: transparent;
+  border: transparent;
+}
+
+
+#modextra .carousel-caption {
+  position: absolute;
+  width: 75%;
+  height: 100%;  
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(15, 15, 15, 0.808); 
+  padding: 20px;
+  color: white;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+  z-index: 1;
+  display: flex; 
+  align-items: center; 
+  justify-content: center; 
+  text-align: center;
+}
+
+
+#modextra .carousel-item:hover .carousel-caption {
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.carousel-caption h5,
+.carousel-caption p {
+  margin: 0; 
+}
 
 
 
 /* Nosotros CSS */
-
-.encabezado-nosotros img{
-  width: 100%;
-  height: 700px;
-  filter: brightness(70%)
-}
-
-.encabezado-nosotros {
-  position: relative;
-  text-align: center;
+.inicio {
+  height: 100vh; /* Ocupa el 100% de la altura de la pantalla */
+  background-size: cover; 
+  background-position: center; 
+  display: flex; 
+  justify-content: center; 
+  align-items: center;
+  background-image: url('images/nosotros1.jpg');
 }
 
 .texto-superpuesto {
-position: absolute;
-top: 70%;
-left: 50%;
-transform: translate(-50%, -50%);
-z-index: 1; 
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: rgb(255, 255, 255);
 }
 
 #nosotros h1 {
@@ -1228,16 +1313,6 @@ z-index: 1;
   font-family: 'Oswald', sans-serif;
   font-weight: 700;
   font-size: 4rem;
-  margin-top: -150px;
-}
-
-.linea-azul {
-content: "";
-display: block;
-height: 12px; 
-width: 100%; 
-background-color: rgba(23, 63, 114, 1);
-margin: 35px auto; 
 }
 
 /* Estilos para la sección visionMision */
@@ -1400,23 +1475,30 @@ height: auto;
 
 
 /* Contacto */ 
+.inicio {
+  height: 100vh; /* Ocupa el 100% de la altura de la pantalla */
+  background-size: cover; 
+  background-position: center; 
+  display: flex; 
+  justify-content: center; 
+  align-items: center;
+  background-image: url('images/encabezado_contacto.jpg');
+}
 
-.encabezado-con img{
-width: 100%;
-height: 700px;
-filter: brightness(60%)
+.encabezado-con {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: rgb(255, 255, 255);
 }
 
 .encabezado-con h1{
-position: absolute;
-top: 37%;
-left: 50%;
-transform: translate(-50%, -50%);
-text-align: center;
-color: rgb(255, 255, 255);
-font-size: 4rem;
-font-family: 'Oswald', sans-serif;
-font-weight: 700;
+  color: #ffffff;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 700;
+  font-size: 4rem;
 }
 
 
@@ -1577,7 +1659,6 @@ padding-bottom: 30px;
 }
 #nosotros h1 {
   font-size: 3rem;
-  margin-top: -60%;
 }
 .linea-azul {
 content: "";
@@ -1693,16 +1774,6 @@ h2 {
 
 .encabezado-mod h1{
   font-size: 3rem;
-}
-
-.encabezado-mod ::after{
-  content: "";
-  display: block;
-  height: 12px; /* Altura de la línea */
-  width: 110%; /* Longitud de la línea */
-  background-color: rgba(23, 63, 114, 1);
-  margin: 35px auto; /* Espaciado alrededor de la línea */
-  margin-left: -6%;
 }
 #ultrasonido {
   
@@ -1936,6 +2007,7 @@ h2 {
   font-size: 2rem;
   font-family: 'Oswald', sans-serif;
   color: rgba(23, 63, 114, 1);
+  margin-top: 25%;
 }
 .image-container1t img {
   margin-top: -10%;
@@ -1998,7 +2070,7 @@ h2 {
   
 }
 .encabezado-img h1 {
-  font-size: 3rem;
+  font-size: 2rem;
 }
 .encabezado-con h1 {
   font-size: 3rem;
@@ -2024,9 +2096,78 @@ h2 {
   color: #ffffff; /* Color blanco para los iconos de redes sociales */
   }
   .footer-section h4 {
-    font-size: 1.2rem;
+    font-size: 1rem;
+  }
+  .text-container-gray p {
+    font-size: 1rem; /* Tamaño de la fuente */
+    font-family: 'Open Sans', sans-serif; /* Fuente */
+    text-align: center;
+    line-height: 1.5;
+  }
+  .text-container-white {
+    font-size: 1rem; /* Tamaño de la fuente */
+    font-family: 'Open Sans', sans-serif; /* Fuente */
+    line-height: 1.5;
+  }
+  #container-images p {
+    color: rgba(23, 63, 114, 1); 
+    text-align: center; /* Centra el texto */
+    margin-bottom: 5%;
+    margin-top: -10%;
+    font-size: 1.5rem;
+  }
+  #prodSeccion h1 {
+    font-size: 2rem;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+  }
+  #funSeccion .section-heading {
+    color: #000000; /* Cambiar color del título */
+    font-size: 2rem; /* Cambiar tamaño del título */
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+  }
+  #funSeccion p {
+    color: #ffffff; /* Cambiar color del texto */
+    font-size: 1rem; /* Cambiar tamaño del texto */
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.5;
+  }
+  #funSeccion .overlay {
+    font-size: 1rem;
+  }
+  #cuartaSeccion .section-heading-custom {
+    color: #000000; /* Cambiar color del título */
+    font-family: 'Oswald', sans-serif; /* Cambiar fuente del título */
+    font-size: 2rem; /* Cambiar tamaño del título */
+    font-weight: 700;
   }
   
+  #cuartaSeccion p {
+    font-size: 1rem;
+    font-family: 'Open Sans', sans-serif;
+  }
+  #cuartaSeccion {
+    text-align: center;
+    padding: 0px 0; 
+  }
+  .section-heading-custom {
+    font-size: 2rem;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    }
+    .section-heading-custom-sixth {
+      font-size: 2rem;
+      font-family: 'Oswald', sans-serif;
+      font-weight: 700;
+      }
+  .blue-title-sixth6 h1 {
+      color: rgba(23, 63, 114, 1); /* Color azul del título */
+      font-size: 2rem; /* Tamaño de fuente del título */
+      text-align: center; /* Alineación del título */
+      font-family: 'Oswald',sans-serif;
+      margin-top: 10%;
+  }
 }
 
 
@@ -2326,6 +2467,6 @@ h2 {
     color: #ffffff; /* Color blanco para los iconos de redes sociales */
     }
     .footer-section h4 {
-      font-size: 1.2rem;
+      font-size: 1rem;
     }
   }
