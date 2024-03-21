@@ -354,7 +354,8 @@ width: 470px;
 
 #cuartaSeccion {
   text-align: center;
-  padding: 25px 0 0 0; 
+  padding: 50px 0; 
+  margin-bottom: 350px;
 }
 
 #cuartaSeccion .container {
@@ -366,17 +367,74 @@ width: 470px;
   overflow: visible; /* Ocultar el desbordamiento de la imagen fuera del contenedor */
   max-width: 100%; /* Asegurarse de que la imagen no sea más ancha que el contenedor */
   max-height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-#cuartaSeccion img {
+#cuartaSeccion .flujo2 {
   width: 1000px;
   height: auto;
-  max-height: none; /* Ajustar la altura máxima a "none" para permitir desbordamiento hacia arriba y abajo */
-  margin-top: 1%; /* Ajustar el margen superior para centrar la imagen en el desbordamiento hacia arriba */
-  margin-bottom: 1px; /* Ajustar el margen inferior para permitir desbordamiento hacia abajo */
-  overflow: visible; /* Permitir desbordamiento visible */
+  max-height: none; 
+  overflow: visible; 
   transition: filter 0.3s ease-in-out;
+  animation-name: girara;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  
+  
 }
+
+#cuartaSeccion .flujo1 {
+  width: 1000px;
+  height: auto;
+  max-height: none; 
+  overflow: visible; 
+  transition: filter 0.3s ease-in-out;
+  animation-name: girarb;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  position: absolute;
+}
+
+#cuartaSeccion .flujo3 {
+  width: 1000px;
+  height: auto;
+  max-height: none; 
+  overflow: visible; 
+  transition: filter 0.3s ease-in-out;
+  position: absolute;
+}
+
+
+
+@keyframes girarb{
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(-50deg);
+  }
+  100% {
+    transform: rotate(50deg);
+  }
+}
+
+@keyframes girara {
+  0% {
+    transform: rotate(-50deg);
+  }
+  50% {
+    transform: rotate(50deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+
 
 #flujomod img{
   width: 120px;
