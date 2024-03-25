@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
   <!-- Estilos css -->
   <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
   <link rel="stylesheet" href="CSS/style.css">
@@ -62,16 +63,15 @@
 </section>
 
 <!-- Contenedor del primer texto con fondo gris claro -->
-<div class="container text-container-gray">
+<div class="container text-container-gray" data-aos="fade-right">
   <div class="row">
     <div class="col-xl-12 col-sm-12 text-center">
-      <p>WSS MEDICAL SOLUTIONS busca revolucionar la forma en la cual los profesionales de la salud acceden, almacenan y comparten imágenes médicas; 
-        reforzando su capacidad operativa y de diagnóstico para poder brindar atención de excelencia a sus pacientes.</p>
+      <p>WSS MEDICAL SOLUTIONS busca revolucionar la forma en la cual los profesionales de la salud acceden, almacenan y comparten imágenes médicas; reforzando su capacidad operativa y de diagnóstico para poder brindar atención de excelencia a sus pacientes.</p>
     </div>
   </div>
 </div>
 <!-- Contenedor del segundo texto con fondo blanco -->
-<div class="container text-container-white">
+<div class="container text-container-white" data-aos="fade-left">
   <div class="row">
     <div class="col-xl-12 col-sm-12 text-center">
       <p>Nuestra plataforma <b>RIS PACS</b> de vanguardia ofrece una experiencia sin fisuras y segura, permitiendo a los médicos y especialistas acceder a imágenes médicas cruciales en tiempo real desde cualquier lugar y en cualquier momento.</p>
@@ -207,6 +207,19 @@
       </div>
     </div>
   </div>
+
+<!--
+  <div id="circle">
+    <div class='element' > <img src="images/flujosistema1.png" alt=""></div>
+    <div class='element' ><img src="images/flujosistema2.png" alt=""></div>
+    <div class='element' ><img src="images/flujosistema3.png" alt=""></div>
+    <div class='element'  ><img src="images/flujosistema4.png" alt=""></div>
+    <div class='element'><img src="images/flujosistema5.png" alt=""></div>
+    
+  </div>
+-->
+  
+
 </section>
 
 <!-- Sección Nuestras Tecnologías -->
@@ -496,14 +509,29 @@
 const n = 5;  // numero de circulos
 const r = 120 // radio
 
-let angulo = 0;
+let angulo = 5 ;
 let originX = circles[0].offsetLeft
 let originY = circles[0].offsetTop
 
 setInterval(() => {
- angulo += 0.01
+ angulo += 0.0
  circles.forEach((element,i) =>{
  element.style.left = `${originX + r*Math.cos(angulo + 2*Math.PI/n*i)}px`
  element.style.top = `${originY + r*Math.sin(angulo + 2*Math.PI/n*i)}px`})
 },20)
+</script>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+  var element = document.querySelector('.element');
+
+  element.addEventListener('click', function() {
+    this.classList.toggle('clicked');
+  });
+});
+
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script>
+  AOS.init();
 </script>

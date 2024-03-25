@@ -355,7 +355,7 @@ width: 470px;
 #cuartaSeccion {
   text-align: center;
   padding: 50px 0; 
-  margin-bottom: 350px;
+  
 }
 
 #cuartaSeccion .container {
@@ -382,8 +382,7 @@ width: 470px;
   animation-duration: 20s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
-  
-  
+  filter: hue-rotate(28deg);
 }
 
 #cuartaSeccion .flujo1 {
@@ -397,6 +396,7 @@ width: 470px;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
   position: absolute;
+  filter: hue-rotate(188deg);
 }
 
 #cuartaSeccion .flujo3 {
@@ -406,31 +406,26 @@ width: 470px;
   overflow: visible; 
   transition: filter 0.3s ease-in-out;
   position: absolute;
+  filter: hue-rotate(28deg);
 }
 
 
 
 @keyframes girarb{
-  0% {
+  from {
     transform: rotate(0deg);
   }
-  50% {
-    transform: rotate(-50deg);
-  }
-  100% {
-    transform: rotate(50deg);
+  to {
+    transform: rotate(360deg);
   }
 }
 
 @keyframes girara {
-  0% {
-    transform: rotate(-50deg);
-  }
-  50% {
-    transform: rotate(50deg);
-  }
-  100% {
+  from {
     transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-360deg);
   }
 }
 
@@ -447,9 +442,9 @@ width: 470px;
 }
 
 
-#cuartaSeccion img:hover {
+/*#cuartaSeccion img:hover {
   filter: hue-rotate(30deg);
-}
+}*/
 
 .element{
   position: absolute;
@@ -461,15 +456,19 @@ width: 470px;
   transform: translate(-50%,-50%)
 }
 
-.element img{
+.element .clicked img{
   max-width: 100%;
   height: auto;
-  transition: transform 0.3s ease-in-out;
+  transition: transform 0.5s ease-in-out;
+  transition: background-color 0.2s ease-in-out;
 }
 
 .element img:hover{
   transform: scale(1.3);
+  background-color: #0000001f;
+  transform: translate(10%,40%)
 }
+
 
 #circle{
   position: relative;
