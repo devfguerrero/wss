@@ -422,8 +422,8 @@ width: 470px;
   transform: translate(-570%, -250%);  
 }
 #cuartaSeccion .img-flujo .flujopaciente img {
-  width: 100px;
-  height: 100px;
+  width: 50px;
+  height: 50px;
 }
 #cuartaSeccion .img-flujo .flujomod {
   width: 100px;
@@ -432,8 +432,8 @@ width: 470px;
   transform: translate(-400%, -100%); 
 }
 #cuartaSeccion .img-flujo .flujomod img{
-  width: 100px;
-  height: 100px;
+  width: 50px;
+  height: 50px;
 }
 
 #cuartaSeccion .img-flujo .flujopacs {
@@ -443,8 +443,8 @@ width: 470px;
   transform: translate(-400%, 100%); 
 }
 #cuartaSeccion .img-flujo .flujopacs img{
-  width: 100px;
-  height: 100px;
+  width: 50px;
+  height: 50px;
 }
 #cuartaSeccion .img-flujo .flujoint {
   width: 100px;
@@ -453,8 +453,8 @@ width: 470px;
   transform: translate(-750%, 100%); 
 }
 #cuartaSeccion .img-flujo .flujoint img{
-  width: 100px;
-  height: 100px;
+  width: 50px;
+  height: 50px;
 }
 #cuartaSeccion .img-flujo .flujores {
   width: 100px;
@@ -463,8 +463,8 @@ width: 470px;
   transform: translate(-750%, -100%); 
 }
 #cuartaSeccion .img-flujo .flujores img{
-  width: 100px;
-  height: 100px;
+  width: 50px;
+  height: 50px;
 }
 
 
@@ -485,6 +485,11 @@ width: 470px;
   transform: translateY(0);
 }
 
+.modal-content img{
+  width: 50px;
+  height: 50px;
+  filter: invert(100%);
+}
 
 .modal-content button{
   background-color: rgb(207, 111, 2);
