@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <title>WSS Medical Solutions</title>
   <!-- Enlaces a Bootstrap, animate.css, Swiper y Owl Carousel -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
@@ -199,26 +200,110 @@
           <hr class="blue-line-custom">
           <p><br>Para poder aprovechar cada una de las herramientas que el sistema ROD te ofrece, te mostramos un flujo correcto del mismo.</p><br>
           <div class="image-container" style="text-align: center;">
-            <img src="images/flujosistemamedio2.png" alt="Imagen-flujo" class="img-fluid flujo2">
+            <img src="images/flujosistemamedio.png" alt="Imagen-flujo" class="img-fluid flujo2">
             <img src="images/flujosistemamedio.png" alt="" class="img-fluid flujo1">
-            <img src="images/flujosistemaorig.png" alt="" class="img-fluid flujo3">
+            <div class="img-flujo">
+              <div class="flujopaciente">
+                <div class="contenedor-imagen ">
+                  <img src="images/flujosistema1.png" alt="Descripción de la imagen" data-toggle="modal" data-target="#imagenModal">
+                </div>
+              </div>
+              <div class="flujomod">
+                <div class="contenedor-imagen ">
+                  <img src="images/flujosistema2.png" alt="Descripción de la imagen" data-toggle="modal" data-target="#imagenModal2">
+                </div>
+              </div>
+              <div class="flujopacs">
+                <div class="contenedor-imagen ">
+                  <img src="images/flujosistema3.png" alt="Descripción de la imagen" data-toggle="modal" data-target="#imagenModal3">
+                </div>
+                
+              </div>
+              <div class="flujoint">
+                <div class="contenedor-imagen ">
+                  <img src="images/flujosistema4.png" alt="Descripción de la imagen" data-toggle="modal" data-target="#imagenModal4">
+                </div>
+                
+              </div>
+              <div class="flujores">
+                <div class="contenedor-imagen ">
+                  <img src="images/flujosistema5.png" alt="Descripción de la imagen" data-toggle="modal" data-target="#imagenModal5">
+                </div>
+                
+              </div>
+      
+            </div>
           </div>
         </div>
       </div>
     </div>
   </div>
 
-<!--
-  <div id="circle">
-    <div class='element' > <img src="images/flujosistema1.png" alt=""></div>
-    <div class='element' ><img src="images/flujosistema2.png" alt=""></div>
-    <div class='element' ><img src="images/flujosistema3.png" alt=""></div>
-    <div class='element'  ><img src="images/flujosistema4.png" alt=""></div>
-    <div class='element'><img src="images/flujosistema5.png" alt=""></div>
-    
+  <!-- modal Pacientes prueba 1 -->
+  <div class="modal fade" id="imagenModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered ">
+      <div class="modal-content modal-content-transition">
+        <div class="modal-body">
+          <img src="images/flujosistema1.png" alt="Descripción de la imagen">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+          <!-- texto -->
+        </div>
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
   </div>
--->
-  
+  <!-- Modal modalidades prueba 1 -->
+  <div class="modal fade" id="imagenModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered ">
+      <div class="modal-content modal-content-transition">
+        <div class="modal-body">
+          <img src="images/flujosistema2.png" alt="Descripción de la imagen">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          <!-- texto -->
+        </div>
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+   <!-- Modal modalidades prueba 1 -->
+   <div class="modal fade" id="imagenModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered ">
+      <div class="modal-content modal-content-transition">
+        <div class="modal-body">
+          <img src="images/flujosistema3.png" alt="Descripción de la imagen">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+          <!-- texto -->
+        </div>
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+   <!-- Modal modalidades prueba 1 -->
+   <div class="modal fade" id="imagenModal4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered ">
+      <div class="modal-content modal-content-transition">
+        <div class="modal-body">
+          <img src="images/flujosistema4.png" alt="Descripción de la imagen">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+          <!-- texto -->
+        </div>
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+   <!-- Modal modalidades prueba 1 -->
+   <div class="modal fade" id="imagenModal5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered ">
+      <div class="modal-content modal-content-transition">
+        <div class="modal-body">
+          <img src="images/flujosistema5.png" alt="Descripción de la imagen">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+          <!-- texto -->
+        </div>
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
 
 </section>
 
@@ -439,6 +524,9 @@
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.js"></script>
   <script src="https://kit.fontawesome.com/6f33b7b3d1.js" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
   <script>
     $(document).ready(function () {
     $(".arrow-down").on("click", function () {
@@ -501,24 +589,6 @@
       preventInteractionOnTransition: true, // Evitar interacciones durante la transición
     });
   });
-</script>
-
-<script>
-  const circles = document.querySelectorAll('.element')
-
-const n = 5;  // numero de circulos
-const r = 120 // radio
-
-let angulo = 5 ;
-let originX = circles[0].offsetLeft
-let originY = circles[0].offsetTop
-
-setInterval(() => {
- angulo += 0.0
- circles.forEach((element,i) =>{
- element.style.left = `${originX + r*Math.cos(angulo + 2*Math.PI/n*i)}px`
- element.style.top = `${originY + r*Math.sin(angulo + 2*Math.PI/n*i)}px`})
-},20)
 </script>
 
 <script>
