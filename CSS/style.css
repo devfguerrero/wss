@@ -8,37 +8,77 @@ body {
   background-color: #ffffff; /* Cambia esto al color que desees para la barra de navegación */
 }
 
+.navbar-nav {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+}
+
+.navbar-nav .nav-item{
+  color: #ffffff;
+  display: grid;
+  place-content: center;
+  margin: 0;
+}
+
 .navbar-item {
+  position: relative;
+  display: inline-block;
+  padding-bottom: 5px; /* Ajusta el espacio entre el texto y la línea */
+  color: #1a3757d1;
+}
+
+.navbar-item::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #1a3757d1;
+  border-radius: 5px; /* Opcional: ajusta el radio de los bordes de la línea */
+  transform: scaleX(0);
+  transition: transform 0.3s ease-in-out;
+  bottom: 0;
+  left: 0;
+}
+
+.navbar-item:hover::before {
+  transform: scaleX(1);
+}
+
+
+/* .navbar-item {
   cursor: pointer;
   text-decoration: none;
   margin: 0 10px;
-  transition: color 0.3s ease, border-radius 0.3s ease; /* Transición suave de color y bordes en 0.3 segundos */
+  transition: color 0.3s ease, border-radius 0.3s ease; 
 }
 
 .navbar-item:hover {
-  background-color: #1a3757d1; /* Azul al pasar el ratón */
-  color: #ffffff !important; /* Texto blanco al pasar el ratón */
-  border-radius: 5px; /* Bordes redondeados al pasar el ratón */
+  background-color: #1a3757d1; 
+  color: #ffffff !important; 
+  border-radius: 5px; 
   transition: color .4s ease-in-out, background-color .4s ease-in-out;
-}
+}*/
 
 .navbar-brand img {
-  max-height: 30px; /* Ajusta la altura de tu logo */
+  max-height: 30px; 
 }
 
 .navbar-nav {
   width: 100%;
-  justify-content: flex-end; /* Alinea los elementos a la derecha */
+  justify-content: flex-end; 
 }
 
 .navbar-nav .nav-item {
-  text-align: center; /* Justifica el texto en el centro */
+  text-align: center; 
 }
 
 .navbar-nav .nav-item a {
-  font-weight: bold; /* Texto en negritas */
+  font-weight: bold; 
   font-size: 15pt;
 }
+
+
 
 
 /* CSS Inicio */
@@ -397,6 +437,19 @@ width: 470px;
   filter: hue-rotate(188deg);
 }
 
+#cuartaSeccion .flujo3{
+  width: 450px;
+  height: auto;
+  max-height: none; 
+  transition: filter 0.3s ease-in-out;
+  animation-name: girarb;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  position: absolute;
+  
+}
+
 @keyframes girarb{
   from {
     transform: rotate(0deg);
@@ -521,12 +574,12 @@ width: 470px;
 .core-inner {
   width: 250px;
   height: 250px;
-  border: 8px solid #48bee6; /*rgba(23, 63, 114, 1);*/
+  border: 8px solid #449ddf; /*rgba(23, 63, 114, 1);*/
 /*  box-shadow: 0 0 7px 5px #52fefe, 0 0 18px 12px #52fefe inset; */
   background-color: #ffffff;
   animation: pulse 0.5s infinite;
 /*   transition: box-shadow 0.3s ease-in-out; */
-box-shadow: 0 0 20px 10px rgba(153, 85, 7, 0.5)
+box-shadow: 0 0 20px 10px (#ff791b)
             ; /* Sombra difuminada */
 }
 
@@ -534,17 +587,17 @@ box-shadow: 0 0 20px 10px rgba(153, 85, 7, 0.5)
 @keyframes pulse {
   0% {
     transform: scale(0.95);
-    box-shadow: 0 0 20px 10px rgba(153, 85, 7, 0.5);
+    box-shadow: 0 0 20px 10px #ff791b;
   }
   
   50% {
     transform: scale(1);
-    box-shadow:  0 0 20px 10px rgba(153, 85, 7, 0.5);
+    box-shadow:  0 0 20px 10px #ff791b;
   }
   
   100% {
     transform: scale(0.95);
-    box-shadow:  0 0 20px 10px rgba(153, 85, 7, 0.5);
+    box-shadow:  0 0 20px 10px #ff791b;
   }
 }
 
