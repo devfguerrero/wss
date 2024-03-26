@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
   <!-- Estilos css -->
   <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
   <link rel="stylesheet" href="CSS/style.css">
@@ -60,7 +61,7 @@
   </section>
 
 <!-- Contenido de visionMision -->
-<section id="visionMision">
+<section id="visionMision" data-aos="fade-up">
     <div class="texto-centrado">
         <h2>"La evolución de la radiología y la gestión de imágenes médicas"</h2>
         
@@ -83,7 +84,7 @@
 </section>
 
 <!-- Contenido de valores -->
-<section id="valores">
+<section id="valores" data-aos="fade-right">
     <div class="container overflow-visible">
         <div class="row">
             <div class="col-md-10 order-md-2">
@@ -100,7 +101,7 @@
 </section>
 
 <!-- Contenido de objetivo -->
-<section id="objetivo">
+<section id="objetivo" data-aos="fade-left">
     <div class="container texto-centrado2">
         <p class="texto-modificado2"><b>Objetivo:</b> Poder ofrecer un servicio que se adapte a las necesidades de nuestro cliente. Buscamos optimizar y reducir los tiempos de trabajo para brindar diagnósticos rápidos y eficientes a los pacientes.</p>
     </div>
@@ -109,7 +110,7 @@
 
 
 <!-- Contenido de equipo -->
-<section id="equipo">
+<section id="equipo" data-aos="zoom-in">
     <div class="container texto-centrado3">
         <p class="texto-modificado3">Lo que distingue a nuestro equipo es nuestra actitud hacia el trabajo. Nos enorgullece cultivar un ambiente de colaboración, donde cada voz es escuchada, fomentando así un espíritu de equipo que nos impulsa a lograr juntos los objetivos de la organización.</p>
     </div>
@@ -158,3 +159,8 @@
       mousewheel: true,
     });
   </script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  
