@@ -129,7 +129,7 @@ body {
 
 
 #inicio h1 {
-  font-size: 4rem;
+  font-size: 5rem;
   font-family: 'Oswald', sans-serif;
   font-weight: 700;
   color: #ffffff;
@@ -150,6 +150,42 @@ body {
   white-space: normal; /* Evita que el texto se divida en varias líneas */
   overflow: hidden; /* Oculta cualquier contenido que desborde */
   color: #ffffff;
+}
+
+#inicio h3 {
+  font-family: 'roboto', sans-serif;
+  font-size: 2rem;
+  font-style: italic;
+  text-align: center;
+  white-space: normal; /* Evita que el texto se divida en varias líneas */
+  overflow: hidden; /* Oculta cualquier contenido que desborde */
+  color: #ff791b;
+}
+
+/* Agregar estilos de hover a las imágenes */
+.image-container {
+  position: relative;
+  overflow: hidden;
+}
+.image-container:hover img {
+  transform: scale(1.1);
+}
+.image-container img {
+  transition: transform 0.3s ease;
+}
+/* Opcional: Estilos para el texto encima de las imágenes */
+.text-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.image-container:hover .text-overlay {
+  opacity: 1;
 }
 
 .img-pathology{
@@ -1721,9 +1757,36 @@ font-size: 1.5rem;
 font-weight: 700;
 }
 
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.651); 
+  color: white; 
+  opacity: 0; 
+  transition: opacity 0.3s ease; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.overlay-text {
+  text-align: center;
+}
+
+.image-container:hover .overlay {
+  opacity: 1; 
+}
+
 #contactos img{
 width: 500px;
 height: 250px;
+}
+
+#contactos h3 {
+  font-size: 1.6rem;
 }
 
 #contactos h1{
@@ -1738,6 +1801,15 @@ font-weight: 700;
 text-align: center;
 font-family: 'Open Sans', sans-serif; /* Fuente */
 font-size: 1.3rem;
+}
+
+#contactos a {
+  color: #ffffff;
+  font-size: 1.6rem;
+}
+
+#contactos i {
+  font-size: 1.5rem;
 }
 
 .map_container{
