@@ -387,10 +387,11 @@ width: 470px;
   font-weight: 700;
 }
 
-#cuartaSeccion p {
+#cuartaSeccion .texto-flujo {
   font-size: 1.5rem;
   font-family: 'Open Sans', sans-serif;
 }
+
 
 #cuartaSeccion {
   text-align: center;
@@ -421,7 +422,7 @@ width: 470px;
   animation-duration: 20s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
-  filter: hue-rotate(28deg); 
+   
 }
 
 #cuartaSeccion .flujo1 {
@@ -434,7 +435,7 @@ width: 470px;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
   position: absolute;
-  filter: hue-rotate(188deg);
+  
 }
 
 #cuartaSeccion .flujo3{
@@ -469,6 +470,10 @@ width: 470px;
 }
 
 
+#cuartaSeccion .img-flujo p{
+  font-size: 1.5rem;
+  font-family: 'Open Sans', sans-serif;
+}
 
 #cuartaSeccion .img-flujo .flujopaciente {
   width: 100px;
@@ -574,10 +579,10 @@ width: 470px;
 .core-inner {
   width: 250px;
   height: 250px;
-  border: 8px solid #449ddf; /*rgba(23, 63, 114, 1);*/
+  border: 8px solid rgba(23, 63, 114, 1) ; /*#449ddf*/
 /*  box-shadow: 0 0 7px 5px #52fefe, 0 0 18px 12px #52fefe inset; */
   background-color: #ffffff;
-  animation: pulse 0.5s infinite;
+  animation: pulse 0.75s infinite;
 /*   transition: box-shadow 0.3s ease-in-out; */
 box-shadow: 0 0 20px 10px (#ff791b)
             ; /* Sombra difuminada */
@@ -604,9 +609,15 @@ box-shadow: 0 0 20px 10px (#ff791b)
 
 
 .modal-content{
-  color: #ffffff;
-  background-color: rgba(23, 63, 114, 1);
+  border-radius: 30px;
   transition: all 0.3s ease-in-out;
+  box-shadow: 10px 10px 5px 0px  rgba(23, 63, 114, 1);
+}
+
+.modal-title {
+  display: flex;
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center; /* Centra verticalmente */
 }
 
 .modal-content.modal-content-transition {
@@ -622,16 +633,31 @@ box-shadow: 0 0 20px 10px (#ff791b)
 
 .modal-content img{
   width: 50px;
-  height: 50px;
-  filter: invert(100%);
+  height: 50px;  
 }
 
-.modal-content button{
-  background-color: rgb(207, 111, 2);
+.modal-content summary{
+  font-size: 1.5rem;
+  font-family: 'Open Sans', sans-serif;
+  padding-left: 20px;
+  cursor: pointer;
+  list-style: none;
 }
 
-.modal-content button:hover{
-  background-color: rgba(207, 111, 2, 0.521);
+.modal-content .detalles-cuatro p{
+  font-size: 1rem;
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  margin-top: 0; 
+}
+
+.modal-content .detalles-cuatro {
+  overflow: hidden;
+  transition: height 1s ease-out;
+}
+
+.detalles-cuatro summary::-webkit-details-marker {
+  display: none;
 }
 
 /* Quinta seccion */
