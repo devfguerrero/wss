@@ -1891,7 +1891,7 @@ padding-bottom: 30px;
 
 /* Responsive celular*/
 
-@media screen and (max-width: 768px) {
+@media screen  and (max-width: 767px) {
 #inicio h1 {
   font-size: 2rem;
 }
@@ -1928,6 +1928,10 @@ padding-bottom: 30px;
   margin-top: -5%;
 }
 
+#cuartaSeccion{
+  margin-bottom: 0px;
+}
+
 #cuartaSeccion .image-container {
   overflow: visible; /* Ocultar el desbordamiento de la imagen fuera del contenedor */
   max-width: 100%; /* Asegurarse de que la imagen no sea más ancha que el contenedor */
@@ -1935,17 +1939,20 @@ padding-bottom: 30px;
 }
 
 #cuartaSeccion .flujo1 {
-  width: 70%;  
+  width: 75%;  
 }
 
 #cuartaSeccion .flujo2 {
   width: 100%;  
 }
 
+#cuartaSeccion .flujo3 {
+  width: 35%;  
+}
+
 .circle{
-  width: 100px;
-  height: 100px;
-  top: 68%;
+  width: 70px;
+  height: 70px;
 }
 
 .image-container{
@@ -1957,47 +1964,72 @@ padding-bottom: 30px;
 }
 
 #cuartaSeccion .img-flujo .flujopaciente {
-  width: 100px;
-  height: 100px;
-  top: 120%;
-  left: 188%; 
+  width: 50px;
+  height: 50px;
+  top: 22%;
+  left: 43%; 
+  transform: unset;
+}
+
+#cuartaSeccion .img-flujo .flujopaciente img{
+  width: 40px;
+  height: 40px;
 }
 
 #cuartaSeccion .img-flujo .flujomod {
   width: 100px;
   height: 100px;
-  top: 96%;
-  left: 148%; 
+  top: 39%;
+  left: 57%;
+  transform: unset; 
+}
+
+#cuartaSeccion .img-flujo .flujomod img{
+  width: 40px;
+  height: 40px;
 }
 
 #cuartaSeccion .img-flujo .flujopacs {
   width: 100px;
   height: 100px;
-  top: 70%;
-  left: 160%; 
+  top: 63%;
+  left: 52%;
+  transform: unset;
+}
+
+#cuartaSeccion .img-flujo .flujopacs img{
+  width: 30px;
+  height: 30px;
 }
 
 #cuartaSeccion .img-flujo .flujoint {
   width: 100px;
   height: 100px;
-  top: 70%;
-  left: 220%; 
+  top: 63%;
+  left: 24%;
+  transform: unset; 
+}
+
+#cuartaSeccion .img-flujo .flujoint img{
+  width: 40px;
+  height: 40px;
 }
 
 #cuartaSeccion .img-flujo .flujores {
   width: 100px;
   height: 100px;
-  top: 96%;
-  left: 233%; 
+  top: 39%;
+  left: 15%;
+  transform: unset; 
 }
 
-#cuartaSeccion img {
-  margin-top: -30px; 
-  margin-bottom: 30px; 
+#cuartaSeccion .img-flujo .flujores img{
+  width: 30px;
+  height: 30px;
 }
 
 #tecnologias{
-  margin-top: 0px;
+  margin-top: 100px;
 }
 
 #productospat h1{
@@ -2363,8 +2395,8 @@ h2 {
   font-size: 2rem;
   font-family: 'Oswald', sans-serif;
   color: rgba(23, 63, 114, 1);
-  margin-top: 25%;
 }
+
 .image-container1t img {
   margin-top: -10%;
   margin-left: -70%;
@@ -2507,6 +2539,7 @@ h2 {
     text-align: center;
     padding: 0px 0; 
   }
+
   .section-heading-custom {
     font-size: 2rem;
     font-family: 'Oswald', sans-serif;
@@ -2529,7 +2562,7 @@ h2 {
 
 /* Responsive tablet */
 
-@media screen and (max-width: 1024px) {
+@media screen and (min-width: 768px) and (max-width: 1024px) {
   #inicio h1 {
     font-size: 2rem;
   }
@@ -2560,6 +2593,72 @@ h2 {
   }.text-container-white p {
     text-align: justify;
   }
+
+  #cuartaSeccion .flujo1 {
+    width: 75%;  
+  }
+  
+  #cuartaSeccion .flujo2 {
+    width: 100%;  
+  }
+  
+  #cuartaSeccion .flujo3 {
+    width: 35%;  
+  }
+  
+  .circle{
+    width: 150px;
+    height: 150px;
+  }
+  
+  .image-container{
+    display: block;
+  }
+  
+  #cuartaSeccion .img-flujo p{
+    display: none;
+  }
+  
+  #cuartaSeccion .img-flujo .flujopaciente {
+    width: 50px;
+    height: 50px;
+    top: 23%;
+    left: 47%; 
+    transform: unset;
+  }
+  
+  #cuartaSeccion .img-flujo .flujomod {
+    width: 100px;
+    height: 100px;
+    top: 39%;
+    left: 65%;
+    transform: unset; 
+  }
+  
+  #cuartaSeccion .img-flujo .flujopacs {
+    width: 100px;
+    height: 100px;
+    top: 63%;
+    left: 60%;
+    transform: unset;
+  }
+
+  #cuartaSeccion .img-flujo .flujoint {
+    width: 100px;
+    height: 100px;
+    top: 63%;
+    left: 27%;
+    transform: unset; 
+  }
+
+  #cuartaSeccion .img-flujo .flujores {
+    width: 100px;
+    height: 100px;
+    top: 39%;
+    left: 22%;
+    transform: unset; 
+  }
+ 
   #ultrasonido {
     
     padding-top: 30px;
