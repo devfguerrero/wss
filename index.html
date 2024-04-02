@@ -52,8 +52,9 @@
     <div class="row">
       <div class="col-lg-12  text-center" id="inicio-img">
         <div class="text-container">
-          <h1 class="section-heading text-uppercase">Sistema ROD</h1>
+          <h1 class="section-heading text-uppercase">ROD</h1>
           <h2 class="section-subheading text-uppercase">RIS | PACS</h2>
+          <h3 class="drod" id="drod">Diagnóstico inteligente</h3>
           <p class="animate__animated" id="inicio-texto">“La evolución de la radiología y la gestión de imágenes médicas.”</p>
         </div>
       </div>
@@ -82,7 +83,7 @@
 <hr class="blue-line">
 
 <!-- Contenedor después de la línea azul -->
-<div id="container-images" class="container text-container-white">
+<div id="container-images" class="container text-container-white" data-aos="zoom-in">
   <div class="row">
       <!-- Imagen 1 -->
       <div class="col-lg-4">
@@ -194,10 +195,10 @@
         <div class="text-container">
           <h1 class="section-heading-custom" style="color: #000000;">Flujo del Sistema</h1>
           <hr class="blue-line-custom">
-          <p><br>Para poder aprovechar cada una de las herramientas que el sistema ROD te ofrece, te mostramos un flujo correcto del mismo.</p><br>
+          <p class="texto-flujo"><br>Para poder aprovechar cada una de las herramientas que el sistema ROD te ofrece, te mostramos un flujo correcto del mismo.</p><br>
           <div class="image-container" style="text-align: center;">
             <img src="images/flujosistemamedio.png" alt="Imagen-flujo" class="img-fluid flujo2">
-            <img src="images/flujosistemamedio.png" alt="" class="img-fluid flujo1">
+            <img src="images/flujosistemamedio2.png" alt="" class="img-fluid flujo1">
             <img src="images/circulo4.png" alt="" class="img-fluid flujo3">
             <div class="img-flujo">
               <div class="flujopaciente">
@@ -247,11 +248,19 @@
     <div class="modal-dialog modal-dialog-centered ">
       <div class="modal-content modal-content-transition">
         <div class="modal-body">
-          <img src="images/flujosistema1.png" alt="Descripción de la imagen">
-          <p>Registro de pacientes ilimitados. </p>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <img src="images/flujosistema1.png" alt="">
+          <details class="detalles-cuatro">
+            <summary>Registro de Pacientes Ilimitados.</summary>
+                <p>
+                  ROD utiliza el estándar HL7 para poder comunicarse con equipos médicos,
+                  permitiendo organizar los estudios por realizar mediante el protocolo DICOM WORKLIST.
+                </p>
+          </details>
           <!-- texto -->
         </div>
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
       </div>
     </div>
   </div>
@@ -260,11 +269,18 @@
     <div class="modal-dialog modal-dialog-centered ">
       <div class="modal-content modal-content-transition">
         <div class="modal-body">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
+            <span aria-hidden="true">&times;</span>
+          </button>
           <img src="images/flujosistema2.png" alt="Descripción de la imagen">
-          <p>Toma de estudios por modalidad. US, TAC, RM, MG, entre otras.</p>
-          <!-- texto -->
+          <details class="detalles-cuatro">
+            <summary>Toma de estudios por modalidad.</summary>
+                <p>
+                  Los equipos médicos pueden consultar la información y obtener los datos del paciente por medio del protocolo DICOM WORKLIST,
+                   lo que garantiza un mejor ﬂujo de trabajo disminuyendo el error humano.
+                </p>
+          </details>
         </div>
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
       </div>
     </div>
   </div>
@@ -273,11 +289,15 @@
     <div class="modal-dialog modal-dialog-centered ">
       <div class="modal-content modal-content-transition">
         <div class="modal-body">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
+            <span aria-hidden="true">&times;</span>
+          </button>
           <img src="images/flujosistema3.png" alt="Descripción de la imagen">
-          <p>Almacenamiento y distribución de imágenes médicas, servidor local o en la nube. </p>
-          <!-- texto -->
+          <details class="detalles-cuatro">
+            <summary>Almacenamiento y distribución de imágenes médicas.</summary>
+            <p>Una vez tomadas las imágenes médicas, se almacenan en nuestro sistema PACS, ya sea con un  servidor local o en la nube. </p>
+          </details>
         </div>
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
       </div>
     </div>
   </div>
@@ -286,11 +306,17 @@
     <div class="modal-dialog modal-dialog-centered ">
       <div class="modal-content modal-content-transition">
         <div class="modal-body">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
+            <span aria-hidden="true">&times;</span>
+          </button>
           <img src="images/flujosistema4.png" alt="Descripción de la imagen">
-          <p>Interpretación de resultados por profesionales de la salud. </p>
+          <details class="detalles-cuatro">
+            <summary>Interpretación de resultados por profesionales de la salud.</summary>
+            <p>Los médicos pueden realizar su interpretación desde una estación de forma local 
+              (directamente en la red del cliente) o de forma externa de un servidor WEB (desde cualquier parte del mundo). </p>
+          </details>
           <!-- texto -->
         </div>
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
       </div>
     </div>
   </div>
@@ -299,11 +325,15 @@
     <div class="modal-dialog modal-dialog-centered ">
       <div class="modal-content modal-content-transition">
         <div class="modal-body">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
+            <span aria-hidden="true">&times;</span>
+          </button>
           <img src="images/flujosistema5.png" alt="Descripción de la imagen">
-          <p>Entrega y visualización de resultados médicos desde cualquier dispositivo. </p>
-          <!-- texto -->
+          <details class="detalles-cuatro">
+            <summary>Entrega y visualización de resultados médicos.</summary>
+            <p>Los estudios realizados y los resultados son consultables por cualquier usuario o paciente desde cualquier lugar y dispositivo, a través del portal D+CLIC.</p>
+          </details>
         </div>
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
       </div>
     </div>
   </div>
@@ -506,10 +536,10 @@
       <div class="col-lg-3">
         <!-- Agregar aquí los iconos de redes sociales -->
         <i class="fab fa-facebook-square" aria-hidden="true"></i>
-        <a href="https://twitter.com/wss_medical"><i class="fa-brands fa-square-x-twitter" aria-hidden="true"></i></a>
-        <a href="https://www.instagram.com/wss_medical/"><i class="fab fa-instagram-square" aria-hidden="true"></i></a> 
+        <i class="fa-brands fa-square-x-twitter" aria-hidden="true"></i>
+        <i class="fab fa-instagram-square" aria-hidden="true"></i> 
         <i class="fab fa-youtube-square" aria-hidden="true"></i>
-        <a href="https://www.linkedin.com/in/wss-medical-solutions-6265382b9/"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
+        <i class="fab fa-linkedin" aria-hidden="true"></i>
       </div>
     </div>
   </div>
@@ -592,16 +622,6 @@
   });
 </script>
 
-<script>
-  document.addEventListener("DOMContentLoaded", function() {
-  var element = document.querySelector('.element');
-
-  element.addEventListener('click', function() {
-    this.classList.toggle('clicked');
-  });
-});
-
-</script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
 <script>
   AOS.init();

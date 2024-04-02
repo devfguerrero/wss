@@ -129,7 +129,7 @@ body {
 
 
 #inicio h1 {
-  font-size: 4rem;
+  font-size: 5rem;
   font-family: 'Oswald', sans-serif;
   font-weight: 700;
   color: #ffffff;
@@ -150,6 +150,42 @@ body {
   white-space: normal; /* Evita que el texto se divida en varias líneas */
   overflow: hidden; /* Oculta cualquier contenido que desborde */
   color: #ffffff;
+}
+
+#inicio h3 {
+  font-family: 'roboto', sans-serif;
+  font-size: 2rem;
+  font-style: italic;
+  text-align: center;
+  white-space: normal; /* Evita que el texto se divida en varias líneas */
+  overflow: hidden; /* Oculta cualquier contenido que desborde */
+  color: #ff791b;
+}
+
+/* Agregar estilos de hover a las imágenes */
+.image-container {
+  position: relative;
+  overflow: hidden;
+}
+.image-container:hover img {
+  transform: scale(1.1);
+}
+.image-container img {
+  transition: transform 0.3s ease;
+}
+/* Opcional: Estilos para el texto encima de las imágenes */
+.text-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.image-container:hover .text-overlay {
+  opacity: 1;
 }
 
 .img-pathology{
@@ -387,10 +423,11 @@ width: 470px;
   font-weight: 700;
 }
 
-#cuartaSeccion p {
+#cuartaSeccion .texto-flujo {
   font-size: 1.5rem;
   font-family: 'Open Sans', sans-serif;
 }
+
 
 #cuartaSeccion {
   text-align: center;
@@ -421,7 +458,7 @@ width: 470px;
   animation-duration: 20s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
-  filter: hue-rotate(28deg); 
+   
 }
 
 #cuartaSeccion .flujo1 {
@@ -434,7 +471,7 @@ width: 470px;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
   position: absolute;
-  filter: hue-rotate(188deg);
+  
 }
 
 #cuartaSeccion .flujo3{
@@ -469,6 +506,10 @@ width: 470px;
 }
 
 
+#cuartaSeccion .img-flujo p{
+  font-size: 1.5rem;
+  font-family: 'Open Sans', sans-serif;
+}
 
 #cuartaSeccion .img-flujo .flujopaciente {
   width: 100px;
@@ -574,10 +615,10 @@ width: 470px;
 .core-inner {
   width: 250px;
   height: 250px;
-  border: 8px solid #449ddf; /*rgba(23, 63, 114, 1);*/
+  border: 8px solid rgba(23, 63, 114, 1) ; /*#449ddf*/
 /*  box-shadow: 0 0 7px 5px #52fefe, 0 0 18px 12px #52fefe inset; */
   background-color: #ffffff;
-  animation: pulse 0.5s infinite;
+  animation: pulse 0.75s infinite;
 /*   transition: box-shadow 0.3s ease-in-out; */
 box-shadow: 0 0 20px 10px (#ff791b)
             ; /* Sombra difuminada */
@@ -604,9 +645,15 @@ box-shadow: 0 0 20px 10px (#ff791b)
 
 
 .modal-content{
-  color: #ffffff;
-  background-color: rgba(23, 63, 114, 1);
+  border-radius: 30px;
   transition: all 0.3s ease-in-out;
+  box-shadow: 10px 10px 5px 0px  rgba(23, 63, 114, 1);
+}
+
+.modal-title {
+  display: flex;
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center; /* Centra verticalmente */
 }
 
 .modal-content.modal-content-transition {
@@ -622,16 +669,31 @@ box-shadow: 0 0 20px 10px (#ff791b)
 
 .modal-content img{
   width: 50px;
-  height: 50px;
-  filter: invert(100%);
+  height: 50px;  
 }
 
-.modal-content button{
-  background-color: rgb(207, 111, 2);
+.modal-content summary{
+  font-size: 1.5rem;
+  font-family: 'Open Sans', sans-serif;
+  padding-left: 20px;
+  cursor: pointer;
+  list-style: none;
 }
 
-.modal-content button:hover{
-  background-color: rgba(207, 111, 2, 0.521);
+.modal-content .detalles-cuatro p{
+  font-size: 1rem;
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  margin-top: 0; 
+}
+
+.modal-content .detalles-cuatro {
+  overflow: hidden;
+  transition: height 1s ease-out;
+}
+
+.detalles-cuatro summary::-webkit-details-marker {
+  display: none;
 }
 
 /* Quinta seccion */
@@ -1721,9 +1783,36 @@ font-size: 1.5rem;
 font-weight: 700;
 }
 
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.651); 
+  color: white; 
+  opacity: 0; 
+  transition: opacity 0.3s ease; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.overlay-text {
+  text-align: center;
+}
+
+.image-container:hover .overlay {
+  opacity: 1; 
+}
+
 #contactos img{
 width: 500px;
 height: 250px;
+}
+
+#contactos h3 {
+  font-size: 1.6rem;
 }
 
 #contactos h1{
@@ -1738,6 +1827,15 @@ font-weight: 700;
 text-align: center;
 font-family: 'Open Sans', sans-serif; /* Fuente */
 font-size: 1.3rem;
+}
+
+#contactos a {
+  color: #ffffff;
+  font-size: 1.6rem;
+}
+
+#contactos i {
+  font-size: 1.5rem;
 }
 
 .map_container{
@@ -1793,7 +1891,7 @@ padding-bottom: 30px;
 
 /* Responsive celular*/
 
-@media screen and (max-width: 768px) {
+@media screen  and (max-width: 767px) {
 #inicio h1 {
   font-size: 2rem;
 }
@@ -1830,6 +1928,10 @@ padding-bottom: 30px;
   margin-top: -5%;
 }
 
+#cuartaSeccion{
+  margin-bottom: 0px;
+}
+
 #cuartaSeccion .image-container {
   overflow: visible; /* Ocultar el desbordamiento de la imagen fuera del contenedor */
   max-width: 100%; /* Asegurarse de que la imagen no sea más ancha que el contenedor */
@@ -1837,17 +1939,20 @@ padding-bottom: 30px;
 }
 
 #cuartaSeccion .flujo1 {
-  width: 70%;  
+  width: 75%;  
 }
 
 #cuartaSeccion .flujo2 {
   width: 100%;  
 }
 
+#cuartaSeccion .flujo3 {
+  width: 35%;  
+}
+
 .circle{
-  width: 100px;
-  height: 100px;
-  top: 68%;
+  width: 70px;
+  height: 70px;
 }
 
 .image-container{
@@ -1859,47 +1964,72 @@ padding-bottom: 30px;
 }
 
 #cuartaSeccion .img-flujo .flujopaciente {
-  width: 100px;
-  height: 100px;
-  top: 120%;
-  left: 188%; 
+  width: 50px;
+  height: 50px;
+  top: 22%;
+  left: 43%; 
+  transform: unset;
+}
+
+#cuartaSeccion .img-flujo .flujopaciente img{
+  width: 40px;
+  height: 40px;
 }
 
 #cuartaSeccion .img-flujo .flujomod {
   width: 100px;
   height: 100px;
-  top: 96%;
-  left: 148%; 
+  top: 39%;
+  left: 57%;
+  transform: unset; 
+}
+
+#cuartaSeccion .img-flujo .flujomod img{
+  width: 40px;
+  height: 40px;
 }
 
 #cuartaSeccion .img-flujo .flujopacs {
   width: 100px;
   height: 100px;
-  top: 70%;
-  left: 160%; 
+  top: 63%;
+  left: 52%;
+  transform: unset;
+}
+
+#cuartaSeccion .img-flujo .flujopacs img{
+  width: 30px;
+  height: 30px;
 }
 
 #cuartaSeccion .img-flujo .flujoint {
   width: 100px;
   height: 100px;
-  top: 70%;
-  left: 220%; 
+  top: 63%;
+  left: 24%;
+  transform: unset; 
+}
+
+#cuartaSeccion .img-flujo .flujoint img{
+  width: 40px;
+  height: 40px;
 }
 
 #cuartaSeccion .img-flujo .flujores {
   width: 100px;
   height: 100px;
-  top: 96%;
-  left: 233%; 
+  top: 39%;
+  left: 15%;
+  transform: unset; 
 }
 
-#cuartaSeccion img {
-  margin-top: -30px; 
-  margin-bottom: 30px; 
+#cuartaSeccion .img-flujo .flujores img{
+  width: 30px;
+  height: 30px;
 }
 
 #tecnologias{
-  margin-top: 0px;
+  margin-top: 100px;
 }
 
 #productospat h1{
@@ -1994,6 +2124,7 @@ h2 {
   font-style: normal;
   text-align: center;
   margin-bottom: -5%;
+  margin-top: 185px;
 }
 
 /* Añade una clase para ocultar el desbordamiento horizontal en el contenedor */
@@ -2006,8 +2137,8 @@ h2 {
   padding: 40px;
   width: 100%;
   height: auto;
-  margin-top: -30%;
-  margin-bottom: -10%;
+  margin-top: 49%;
+  margin-bottom: -24%;
 }
 #objetivo p {
   font-size: 1rem !important;
@@ -2265,8 +2396,8 @@ h2 {
   font-size: 2rem;
   font-family: 'Oswald', sans-serif;
   color: rgba(23, 63, 114, 1);
-  margin-top: 25%;
 }
+
 .image-container1t img {
   margin-top: -10%;
   margin-left: -70%;
@@ -2409,6 +2540,7 @@ h2 {
     text-align: center;
     padding: 0px 0; 
   }
+
   .section-heading-custom {
     font-size: 2rem;
     font-family: 'Oswald', sans-serif;
@@ -2426,12 +2558,20 @@ h2 {
       font-family: 'Oswald',sans-serif;
       margin-top: 10%;
   }
+  .footer-section {
+    text-align: center;
+  }
+
+#contactos i {
+  margin-top: -50%;
+  margin-bottom: 5%;
+}
 }
 
 
 /* Responsive tablet */
 
-@media screen and (max-width: 1024px) {
+@media screen and (min-width: 768px) and (max-width: 1024px) {
   #inicio h1 {
     font-size: 2rem;
   }
@@ -2462,6 +2602,72 @@ h2 {
   }.text-container-white p {
     text-align: justify;
   }
+
+  #cuartaSeccion .flujo1 {
+    width: 75%;  
+  }
+  
+  #cuartaSeccion .flujo2 {
+    width: 100%;  
+  }
+  
+  #cuartaSeccion .flujo3 {
+    width: 35%;  
+  }
+  
+  .circle{
+    width: 150px;
+    height: 150px;
+  }
+  
+  .image-container{
+    display: block;
+  }
+  
+  #cuartaSeccion .img-flujo p{
+    display: none;
+  }
+  
+  #cuartaSeccion .img-flujo .flujopaciente {
+    width: 50px;
+    height: 50px;
+    top: 23%;
+    left: 47%; 
+    transform: unset;
+  }
+  
+  #cuartaSeccion .img-flujo .flujomod {
+    width: 100px;
+    height: 100px;
+    top: 39%;
+    left: 65%;
+    transform: unset; 
+  }
+  
+  #cuartaSeccion .img-flujo .flujopacs {
+    width: 100px;
+    height: 100px;
+    top: 63%;
+    left: 60%;
+    transform: unset;
+  }
+
+  #cuartaSeccion .img-flujo .flujoint {
+    width: 100px;
+    height: 100px;
+    top: 63%;
+    left: 27%;
+    transform: unset; 
+  }
+
+  #cuartaSeccion .img-flujo .flujores {
+    width: 100px;
+    height: 100px;
+    top: 39%;
+    left: 22%;
+    transform: unset; 
+  }
+ 
   #ultrasonido {
     
     padding-top: 30px;
@@ -2726,5 +2932,11 @@ h2 {
     }
     .footer-section h4 {
       font-size: 1rem;
+    }
+    #contactos i {
+      margin-bottom: 2%;
+    }
+    .footer-section {
+      text-align: center;
     }
   }
