@@ -720,21 +720,29 @@ font-weight: 700;
  
 /* Añadir un margen superior a la quinta sección */
 .quinta-seccion-section {
-margin-top: 20px;
+margin-top: -5%;
 }
 
 .img-fullsize {
-width: 1000px;
+width: 100%;
 height: auto;
 }
 
-.image-container {
+.image-containerv:hover img {
+  transform: scale(1.1);
+}
+
+.image-containerv img {
+  transition: transform 0.3s ease;
+}
+
+.image-containerv {
 overflow: hidden;
 }
 
-.image-container img {
-width: 200%; /* Ajusta el porcentaje según sea necesario para que se desborde */
-height: 270px;
+.image-containerv img {
+width: 90%; /* Ajusta el porcentaje según sea necesario para que se desborde */
+height: 70%;
 }
 
 
