@@ -720,31 +720,28 @@ font-weight: 700;
  
 /* Añadir un margen superior a la quinta sección */
 .quinta-seccion-section {
-margin-top: -5%;
+margin-top: 20px;
 }
 
 .img-fullsize {
-width: 100%;
+width: 80%;
 height: auto;
-}
-
-.image-containerv:hover img {
-  transform: scale(1.1);
-}
-
-.image-containerv img {
-  transition: transform 0.3s ease;
 }
 
 .image-containerv {
 overflow: hidden;
 }
 
-.image-containerv img {
-width: 90%; /* Ajusta el porcentaje según sea necesario para que se desborde */
-height: 70%;
+.image-container img {
+width: 200%; /* Ajusta el porcentaje según sea necesario para que se desborde */
+height: 270px;
 }
-
+.image-containerv:hover img {
+  transform: scale(1.1);
+}
+.image-containerv img {
+  transition: transform 0.3s ease;
+}
 
 /* tecnologia */
 
@@ -1619,7 +1616,7 @@ margin: 20px auto 20px auto;
 }
 
 .texto-modificado {
-font-size: 1rem; 
+font-size: 1.3rem; 
 font-family: 'Open Sans', sans-serif; 
 color: #000000;
 }
@@ -1639,8 +1636,9 @@ margin: 0 auto;
 }
 
 .vision, .mision {
-font-size: 1rem;
+font-size: 1.3rem;
 text-align: justify;
+font-family: 'Open Sans', sans-serif;
 }
 
 /* Estilos para la sección de valores */
@@ -1681,7 +1679,7 @@ padding: 10px 0;
 text-align: center;
 }
 #objetivo p {
-font-size: 1rem;
+font-size: 1.3rem;
 color: #000000;
 text-align: center;
 font-family: 'opens sans', sans-serif;
@@ -1700,7 +1698,7 @@ margin-top: -0.5%;
 }
 
 #equipo p {
-font-size: 1rem; 
+font-size: 1.3rem; 
 color: #000000; 
 text-align: center;
 font-family: 'open sans', sans-serif;
@@ -1820,11 +1818,11 @@ height: 250px;
 }
 
 #contactos h3 {
-  font-size: 1.6rem;
+  font-size: 1.5rem;
 }
 
 #contactos h1{
-padding-top: 30px;
+padding-top: 10px;
 text-align: center;
 font-family: 'Open Sans', sans-serif; /* Fuente */
 font-size: 1.5rem;
@@ -1844,11 +1842,13 @@ font-size: 1.3rem;
 
 #contactos i {
   font-size: 1.5rem;
+  padding: 20px;
+  margin-left: -10%;
 }
 
 .map_container{
 text-align: center;
-padding-bottom: 30px;
+padding-bottom: 20px;
 }
 
 /*Privacidad*/
@@ -2126,7 +2126,9 @@ h2 {
   vertical-align: middle;
   text-align: center;
 }
-
+.texto-modificado {
+  font-size: 1rem !important;
+}
 #valores h2 {
   font-size: 1.1rem;
   font-style: normal;
@@ -2151,12 +2153,12 @@ h2 {
 #objetivo p {
   font-size: 1rem !important;
   margin-right: -15%;
-  margin-top: -45%;
+  margin-top: -38%;
 }
 #equipo {
   background-color: #dad5d560; /* Cambia el color de fondo según tus preferencias */
   padding: 20px; /* Ajusta el relleno según tus preferencias */
-  margin-top: 26%;
+  margin-top: 10%;
 }
 
 #equipo p {
@@ -2571,9 +2573,19 @@ h2 {
   }
 
 #contactos i {
-  margin-top: -50%;
-  margin-bottom: 5%;
+  font-size: 1.3rem;
+  padding: 20px;
+  margin-left: 0%;
 }
+#contactos p {
+  font-size: 1rem;
+}
+#contactos h1 {
+  font-size: 1.3rem;
+}
+#encabezadocontacto p {
+  font-size: 1.1rem;
+  }
 }
 
 
