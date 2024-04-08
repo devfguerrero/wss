@@ -61,7 +61,8 @@ body {
 }*/
 
 .navbar-brand img {
-  max-height: 30px; 
+  margin-left: 50%;
+  max-height: 45px; 
 }
 
 .navbar-nav {
@@ -74,7 +75,7 @@ body {
 }
 
 .navbar-nav .nav-item a {
-  font-weight: bold; 
+  
   font-size: 15pt;
 }
 
@@ -309,8 +310,7 @@ width: 470px;
   color: #ffffff;
   font-size: 1.5rem;
   font-weight: 700;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 14px;
   font-family: 'Oswald', sans-serif;
   text-align: left;
 }
@@ -647,7 +647,7 @@ box-shadow: 0 0 20px 10px (#ff791b)
 .modal-content{
   border-radius: 30px;
   transition: all 0.3s ease-in-out;
-  box-shadow: 10px 10px 5px 0px  rgba(23, 63, 114, 1);
+  box-shadow: 10px 10px 5px 0px  rgb(0,0,0,0.75);
 }
 
 .modal-title {
@@ -753,6 +753,7 @@ height: 70%;
 .tecnologias-section {
 padding: 10px;
 }
+
 .tecnologias-section h1 {
 font-size: 3rem;
 font-family: 'Oswald', sans-serif;
@@ -760,42 +761,50 @@ color: rgba(23, 63, 114, 1);
 /* margin-top: 3%; */
 }
 
+.row .img-tecnologia{
+  width: 100%;
+  justify-content: center;
+  justify-content: space-between;
+}
+
+
 .image-container1t img {
 margin-top: -8%;
-width: 90%;
+margin-left: -10%;
+width: 150px;
 height: auto;
 }
 .image-container2t img {
 margin-top: 18%;
-width: 70%;
+width: 150px;
 height: auto;
 }
 .image-container3t img {
 margin-top: 15%;
-width: 65%;
+width: 150px;
 }
 .image-container4t img {
 margin-top: 5%;
-width: 40%;
+width: 150px;
 }
 .image-container5t img {
 margin-top: 18%;
-width: 40%;
+width: 150px;
 }
 .image-container6t img {
 margin-top: 15%;
-width: 35%;
+width: 150px;
 margin-bottom: -20%;
 }
 .image-container7t img {
 margin-top: 15%;
-width: 65px;
+width: 150px;
 height: 64px;
 margin-bottom: -20%;
 }
 .image-container8t img {
 margin-top: 20%;
-width: 50%;
+width: 150px;
 margin-bottom: -20%;
 }
 
@@ -923,6 +932,7 @@ color: #ffffff; /* Color blanco para los encabezados dentro del footer */
 
 /* Estilos para los iconos de redes sociales */
 .footer-section i {
+  display: none;
 font-size: 1.5rem;
 margin-right: 10px;
 color: #ffffff; /* Color blanco para los iconos de redes sociales */
@@ -1928,6 +1938,11 @@ padding-bottom: 30px;
   margin-top: -10%;
   margin-bottom: 10%;
   text-align: left;
+}
+
+.navbar-brand img {
+  margin-left: 0%;
+  max-height: 45px; 
 }
 
 /* Estilos para el botón */
