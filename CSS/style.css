@@ -61,7 +61,8 @@ body {
 }*/
 
 .navbar-brand img {
-  max-height: 30px; 
+  margin-left: 50%;
+  max-height: 45px; 
 }
 
 .navbar-nav {
@@ -74,7 +75,7 @@ body {
 }
 
 .navbar-nav .nav-item a {
-  font-weight: bold; 
+  
   font-size: 15pt;
 }
 
@@ -309,8 +310,7 @@ width: 470px;
   color: #ffffff;
   font-size: 1.5rem;
   font-weight: 700;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 14px;
   font-family: 'Oswald', sans-serif;
   text-align: left;
 }
@@ -647,7 +647,7 @@ box-shadow: 0 0 20px 10px (#ff791b)
 .modal-content{
   border-radius: 30px;
   transition: all 0.3s ease-in-out;
-  box-shadow: 10px 10px 5px 0px  rgba(23, 63, 114, 1);
+  box-shadow: 10px 10px 5px 0px  rgb(0,0,0,0.75);
 }
 
 .modal-title {
@@ -724,11 +724,11 @@ margin-top: 20px;
 }
 
 .img-fullsize {
-width: 1000px;
+width: 80%;
 height: auto;
 }
 
-.image-container {
+.image-containerv {
 overflow: hidden;
 }
 
@@ -736,7 +736,12 @@ overflow: hidden;
 width: 200%; /* Ajusta el porcentaje según sea necesario para que se desborde */
 height: 270px;
 }
-
+.image-containerv:hover img {
+  transform: scale(1.1);
+}
+.image-containerv img {
+  transition: transform 0.3s ease;
+}
 
 /* tecnologia */
 
@@ -745,6 +750,7 @@ height: 270px;
 .tecnologias-section {
 padding: 10px;
 }
+
 .tecnologias-section h1 {
 font-size: 3rem;
 font-family: 'Oswald', sans-serif;
@@ -752,42 +758,50 @@ color: rgba(23, 63, 114, 1);
 /* margin-top: 3%; */
 }
 
+.row .img-tecnologia{
+  width: 100%;
+  justify-content: center;
+  justify-content: space-between;
+}
+
+
 .image-container1t img {
 margin-top: -8%;
-width: 90%;
+margin-left: -10%;
+width: 150px;
 height: auto;
 }
 .image-container2t img {
 margin-top: 18%;
-width: 70%;
+width: 150px;
 height: auto;
 }
 .image-container3t img {
 margin-top: 15%;
-width: 65%;
+width: 150px;
 }
 .image-container4t img {
 margin-top: 5%;
-width: 40%;
+width: 150px;
 }
 .image-container5t img {
 margin-top: 18%;
-width: 40%;
+width: 150px;
 }
 .image-container6t img {
 margin-top: 15%;
-width: 35%;
+width: 150px;
 margin-bottom: -20%;
 }
 .image-container7t img {
 margin-top: 15%;
-width: 65px;
+width: 150px;
 height: 64px;
 margin-bottom: -20%;
 }
 .image-container8t img {
 margin-top: 20%;
-width: 50%;
+width: 150px;
 margin-bottom: -20%;
 }
 
@@ -915,6 +929,7 @@ color: #ffffff; /* Color blanco para los encabezados dentro del footer */
 
 /* Estilos para los iconos de redes sociales */
 .footer-section i {
+  display: none;
 font-size: 1.5rem;
 margin-right: 10px;
 color: #ffffff; /* Color blanco para los iconos de redes sociales */
@@ -1611,7 +1626,7 @@ margin: 20px auto 20px auto;
 }
 
 .texto-modificado {
-font-size: 1rem; 
+font-size: 1.3rem; 
 font-family: 'Open Sans', sans-serif; 
 color: #000000;
 }
@@ -1631,8 +1646,9 @@ margin: 0 auto;
 }
 
 .vision, .mision {
-font-size: 1rem;
+font-size: 1.3rem;
 text-align: justify;
+font-family: 'Open Sans', sans-serif;
 }
 
 /* Estilos para la sección de valores */
@@ -1673,7 +1689,7 @@ padding: 10px 0;
 text-align: center;
 }
 #objetivo p {
-font-size: 1rem;
+font-size: 1.3rem;
 color: #000000;
 text-align: center;
 font-family: 'opens sans', sans-serif;
@@ -1692,7 +1708,7 @@ margin-top: -0.5%;
 }
 
 #equipo p {
-font-size: 1rem; 
+font-size: 1.3rem; 
 color: #000000; 
 text-align: center;
 font-family: 'open sans', sans-serif;
@@ -1812,11 +1828,11 @@ height: 250px;
 }
 
 #contactos h3 {
-  font-size: 1.6rem;
+  font-size: 1.5rem;
 }
 
 #contactos h1{
-padding-top: 30px;
+padding-top: 10px;
 text-align: center;
 font-family: 'Open Sans', sans-serif; /* Fuente */
 font-size: 1.5rem;
@@ -1836,11 +1852,13 @@ font-size: 1.3rem;
 
 #contactos i {
   font-size: 1.5rem;
+  padding: 20px;
+  margin-left: -10%;
 }
 
 .map_container{
 text-align: center;
-padding-bottom: 30px;
+padding-bottom: 20px;
 }
 
 /*Privacidad*/
@@ -1920,6 +1938,11 @@ padding-bottom: 30px;
   margin-top: -10%;
   margin-bottom: 10%;
   text-align: left;
+}
+
+.navbar-brand img {
+  margin-left: 0%;
+  max-height: 45px; 
 }
 
 /* Estilos para el botón */
@@ -2118,7 +2141,9 @@ h2 {
   vertical-align: middle;
   text-align: center;
 }
-
+.texto-modificado {
+  font-size: 1rem !important;
+}
 #valores h2 {
   font-size: 1.1rem;
   font-style: normal;
@@ -2143,12 +2168,12 @@ h2 {
 #objetivo p {
   font-size: 1rem !important;
   margin-right: -15%;
-  margin-top: -45%;
+  margin-top: -38%;
 }
 #equipo {
   background-color: #dad5d560; /* Cambia el color de fondo según tus preferencias */
   padding: 20px; /* Ajusta el relleno según tus preferencias */
-  margin-top: 26%;
+  margin-top: 10%;
 }
 
 #equipo p {
@@ -2563,9 +2588,19 @@ h2 {
   }
 
 #contactos i {
-  margin-top: -50%;
-  margin-bottom: 5%;
+  font-size: 1.3rem;
+  padding: 20px;
+  margin-left: 0%;
 }
+#contactos p {
+  font-size: 1rem;
+}
+#contactos h1 {
+  font-size: 1.3rem;
+}
+#encabezadocontacto p {
+  font-size: 1.1rem;
+  }
 }
 
 
