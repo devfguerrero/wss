@@ -476,7 +476,7 @@ width: 470px;
 }
 
 #cuartaSeccion .flujo3{
-  width: 450px;
+  width: 325px;
   height: auto;
   max-height: none; 
   transition: filter 0.3s ease-in-out;
@@ -784,20 +784,20 @@ width: 150px;
 }
 .image-container4t img {
 margin-top: 5%;
-width: 150px;
+width: 65px;
 }
 .image-container5t img {
 margin-top: 18%;
-width: 150px;
+width: 100px;
 }
 .image-container6t img {
 margin-top: 15%;
-width: 150px;
+width: 80px;
 margin-bottom: -20%;
 }
 .image-container7t img {
 margin-top: 0 !important;
-width: 150px;
+width: 80px;
 height: auto !important;
 margin-bottom: 0 !important;
 }
@@ -884,13 +884,13 @@ padding-bottom: 10px;
 }
 
 #sextaSeccion .usuarios1, .usuarios2, .usuarios3, .usuarios4 {
-display: flex;
+  display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-between;
   flex-wrap: nowrap;
-
 }
+
+
 
 #img-ofrecemos{
   max-width: 30%;
@@ -913,6 +913,7 @@ display: flex;
   text-align: left; /* Alineación del título */
   font-family: 'Open Sans', sans-serif;
   padding-left: 20px;
+  text-align: justify;
   }
 
 
@@ -2704,6 +2705,7 @@ h2 {
     left: 22%;
     transform: unset; 
   }
+
  
   #ultrasonido {
     
