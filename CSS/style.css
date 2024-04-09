@@ -2514,7 +2514,7 @@ h2 {
   color: #ffffff; /* Color blanco para los iconos de redes sociales */
   }
   .footer-section h4 {
-    font-size: 1rem;
+    font-size: 0.7rem;
   }
   .text-container-gray p {
     font-size: 1rem; /* Tamaño de la fuente */
@@ -2971,12 +2971,28 @@ h2 {
     color: #ffffff; /* Color blanco para los iconos de redes sociales */
     }
     .footer-section h4 {
-      font-size: 1rem;
+      font-size: 0.8rem;
     }
     #contactos i {
       margin-bottom: 2%;
     }
     .footer-section {
       text-align: center;
+    }
+    #contactos i {
+      font-size: 1.3rem;
+      padding: 20px;
+      margin-left: 0%;
+    }
+    #contactos img {
+      margin-left: 0%;
+      overflow: hidden;
+    }
+    #contactos .overlay {
+      margin-left: 0%;
+    }
+    #contactos .image-container {
+      width: 100%;
+      margin-left: 23.2%;
     }
   }
