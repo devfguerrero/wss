@@ -4,6 +4,8 @@ body {
   padding: 0;
 }
 
+
+
 .navbar {
   background-color: #ffffff; /* Cambia esto al color que desees para la barra de navegación */
 }
@@ -45,8 +47,24 @@ body {
   transform: scaleX(1);
 }
 
+.index-body
+{
+  overflow-x: hidden;
+}
 
+.productos-body
+{
+  overflow-x: hidden;
+}
 
+.modalidades-body
+{
+  overflow-x: hidden;
+}
+.nosotros-body
+{
+  overflow-x: hidden;
+}
 /* .navbar-item {
   cursor: pointer;
   text-decoration: none;
@@ -387,29 +405,6 @@ width: 470px;
   opacity: 1;
 }
 
-/* Estilos para la navegación del carrusel */
-
-#funSeccion .swiper-button-next,
-#funSeccion .swiper-button-prev {
-  color: #007bff;
-  position: absolute; /* Agregar posición absoluta para centrar los botones */
-  top: 68%; /* Colocar los botones en la mitad superior del contenedor de la diapositiva */
-  transform: translateY(-50%); /* Centrar verticalmente los botones */
-}
-
-#funSeccion .swiper-button-next {
-  right: 40%; /* Ajustar la posición del botón siguiente */
-  top: 108%;
-  bottom: 0%;
-}
-
-#funSeccion .swiper-button-prev {
-  left: 40%; /* Ajustar la posición del botón anterior */
-  right: 15%; /* Ajustar la posición del botón siguiente */
-  top: 108%;
-  bottom: 0%;
-}
-
 /* Estilos para la cuarta sección */
 #cuartaSeccion .blue-line-custom {
   border: 2px solid rgba(23, 63, 114, 1); /* Cambiar color y grosor de la línea azul */
@@ -442,7 +437,7 @@ width: 470px;
 }
 
 #cuartaSeccion .image-container {
-  overflow: visible; /* Ocultar el desbordamiento de la imagen fuera del contenedor */
+  overflow: hidden; /* Ocultar el desbordamiento de la imagen fuera del contenedor */
   max-width: 100%; /* Asegurarse de que la imagen no sea más ancha que el contenedor */
   max-height: 100%;
   display: flex;
@@ -459,7 +454,7 @@ width: 470px;
   animation-duration: 20s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
-   
+  overflow: hidden;
 }
 
 #cuartaSeccion .flujo1 {
@@ -472,7 +467,7 @@ width: 470px;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
   position: absolute;
-  
+  overflow: hidden;
 }
 
 #cuartaSeccion .flujo3{
@@ -485,24 +480,28 @@ width: 470px;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
   position: absolute;
-  
+  overflow: hidden;
 }
 
 @keyframes girarb{
   from {
     transform: rotate(0deg);
+    overflow: hidden;
   }
   to {
     transform: rotate(360deg);
+    overflow: hidden;
   }
 }
 
 @keyframes girara {
   from {
     transform: rotate(0deg);
+    overflow: hidden;
   }
   to {
-    transform: rotate(-360deg);                           
+    transform: rotate(-360deg);
+    overflow: hidden;                           
   }           
 }
 
@@ -2003,7 +2002,6 @@ padding-bottom: 20px;
   margin-bottom: 25%;
 }
 .section-subheading1 {
-  margin-top: -10%;
   margin-bottom: 10%;
   text-align: left;
 }
@@ -2119,6 +2117,9 @@ padding-bottom: 20px;
   height: 30px;
 }
 
+#sextaSeccion .usuarios1 {
+  margin-top: 5%;
+}
 #tecnologias{
   margin-top: 100px;
 }
@@ -2701,6 +2702,24 @@ h2 {
 #encabezadocontacto p {
   font-size: 1.1rem;
   }
+  .index-body
+{
+  overflow-x: hidden;
+}
+
+.productos-body
+{
+  overflow-x: hidden;
+}
+
+.modalidades-body
+{
+  overflow-x: hidden;
+}
+.nosotros-body
+{
+  overflow-x: hidden;
+}
 }
 
 
@@ -3121,4 +3140,22 @@ h2 {
       width: 100%;
       margin-left: 23.2%;
     }
+    .index-body
+{
+  overflow-x: hidden;
+}
+
+.productos-body
+{
+  overflow-x: hidden;
+}
+
+.modalidades-body
+{
+  overflow-x: hidden;
+}
+.nosotros-body
+{
+  overflow-x: hidden;
+}
   }
