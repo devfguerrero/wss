@@ -1717,10 +1717,10 @@ font-weight: 700;
 }
 
 #nuestro_equipo p{
-font-size: 1rem;
+font-size: 1.3rem;
 text-align: justify;
 font-family: 'Open Sans', sans-serif;
-display: none;
+
 }
 
 #nuestro_equipo .img-equipo1 {
@@ -1766,8 +1766,8 @@ display: none;
 }
 
 .img-engranaje3{
-  width: 300px;
-  transform: translate(85%, 0%);
+  width: 370px;
+  transform: translate(50%, -5%);
 }
 
 .img-engranaje4{
@@ -1784,13 +1784,52 @@ display: none;
   width: 290px;
 }
 
+.t-engranaje2{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 200px;
+}
+
+.t-engranaje3{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 150px;
+}
+
+.t-engranaje4{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 230px;
+}
+
 .azuleq{
   display: none;
 }
 
-.textoeq2{
+.textoeq1{
   display: none;
 }
+
+.textoeq2{
+  display: block;
+}
+
+#equipo p{
+  font-size: 1.3rem;
+color: #000000;
+text-align: center;
+font-family: 'opens sans', sans-serif;
+}
+
 
 /* Contacto */ 
 .inicio {
@@ -1818,8 +1857,6 @@ display: none;
   font-weight: 700;
   font-size: 4rem;
 }
-
-
 
 #encabezadocontacto p{
 padding-top: 30px;
@@ -2201,13 +2238,18 @@ h2 {
   margin-top: -38%;
 }
 
+#nuestro_equipo p{
+  font-size: 1rem;
+  
+}
+
 .img-engranaje1, .img-engranaje2, .img-engranaje3, .img-engranaje4 {
   position: relative;
   width: 100%;
   transform: unset;
 }
 
-.t-engranaje1, .t-engranaje2{
+.t-engranaje1, .t-engranaje2, .t-engranaje4{
   position: absolute;
   top: 50%;
   left: 50%;
@@ -2985,6 +3027,7 @@ h2 {
   #valores h2 {
     margin-top: -5%;
     text-align: center;
+    margin-left: -55%;
   }
   
   .texto-lista {
@@ -3001,6 +3044,39 @@ h2 {
     font-size: 1.1rem;
     text-align: justify;
   }
+
+  .img-engranaje1, .img-engranaje2, .img-engranaje3, .img-engranaje4{
+    transform: unset;
+  }
+
+  .img-engranaje1{
+    width: 500px;
+    left: -20%;
+  }
+
+  .img-engranaje2{
+    width: 380px;
+    top: 25%;
+    left: 5%;
+  }
+
+  .img-engranaje3{
+    left: -18%;
+  }
+
+  .img-engranaje4{
+    width: 450px;
+    top: -5%;
+    left: -23%;
+  }
+
+  .t-engranaje1{
+    width: 50%;
+  }
+  .t-engranaje2{
+    width: 50%;
+  }
+
   #equipo {
     background-color: #dad5d560; /* Cambia el color de fondo según tus preferencias */
     padding: 20px; /* Ajusta el relleno según tus preferencias */
