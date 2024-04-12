@@ -1703,10 +1703,16 @@ width: 100%;
 margin: 40px auto; 
 }
 
-#nuestro_equipo {
-background-color: #dad5d560; 
+.n_eq{
+  background-size: cover; 
+  background-position: center; 
+  background-image: url('images/electroestudio.png');
+
 }
 
+#nuestro_equipo{
+  background-color: #acacac;
+}
 
 #nuestro_equipo h1{
 color: rgba(23, 63, 114, 1) ;
@@ -1720,7 +1726,8 @@ font-weight: 700;
 font-size: 1.3rem;
 text-align: justify;
 font-family: 'Open Sans', sans-serif;
-
+color: #ff791b;
+font-weight: 500;
 }
 
 #nuestro_equipo .img-equipo1 {
@@ -1760,14 +1767,19 @@ font-family: 'Open Sans', sans-serif;
   width: 622px;
 }
 
+.img-engranaje1 p{
+  color: #000;
+  
+}
+
 .img-engranaje2{
   width: 400px;
   transform: translate(0, 50%);
 }
 
 .img-engranaje3{
-  width: 370px;
-  transform: translate(50%, -5%);
+  width: 390px;
+  transform: translate(38%, -1%);
 }
 
 .img-engranaje4{
@@ -3045,35 +3057,23 @@ h2 {
     text-align: justify;
   }
 
+  #nuestro_equipo p{
+    font-size: 1rem;
+  }
+
   .img-engranaje1, .img-engranaje2, .img-engranaje3, .img-engranaje4{
     transform: unset;
-  }
-
-  .img-engranaje1{
-    width: 500px;
-    left: -20%;
-  }
-
-  .img-engranaje2{
-    width: 380px;
-    top: 25%;
-    left: 5%;
-  }
-
-  .img-engranaje3{
-    left: -18%;
-  }
-
-  .img-engranaje4{
-    width: 450px;
-    top: -5%;
-    left: -23%;
+    width: 100%;
   }
 
   .t-engranaje1{
     width: 50%;
   }
   .t-engranaje2{
+    width: 50%;
+  }
+
+  .t-engranaje4{
     width: 50%;
   }
 

@@ -588,64 +588,18 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.js"></script>
   <script src="https://kit.fontawesome.com/6f33b7b3d1.js" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
-  <script>
-    $(document).ready(function () {
-    $(".arrow-down").on("click", function () {
-        // Cambiar la altura de la sección
-        $("#inicio").toggleClass("collapsed");
-
-        // Mostrar u ocultar la flecha según el estado de la sección
-        if ($("#inicio").hasClass("collapsed")) {
-            $(".arrow-down-container").fadeOut();
-            // Ocultar los nuevos contenedores
-            $(".text-container-gray, .text-container-white, .blue-line").slideUp();
-        } else {
-            $(".arrow-down-container").fadeIn();
-            // Mostrar los nuevos contenedores
-            $(".text-container-gray, .text-container-white, .blue-line").slideDown();
-        }
-    });
-
-
-      // Animación al hacer clic en la barra de navegación
-      $(".navbar-item[href='#inicio']").on("click", function (e) {
-        e.preventDefault();
-
-        // Agregar la clase de animación al contenedor de la sección
-        $(".transition-section").addClass("animate-section");
-
-        setTimeout(function () {
-          $(".transition-section").removeClass("animate-section");
-        }, 1000); // 1000 milisegundos = 1 segundo
-      });
-
-      // Gestionar el scroll para mostrar/ocultar la flecha al hacer scroll hacia arriba
-      var lastScrollTop = 0;
-      $(window).scroll(function () {
-        var st = $(this).scrollTop();
-        if (st > lastScrollTop) {
-          // Hacia abajo
-          $(".arrow-down-container").fadeOut();
-        } else {
-          // Hacia arriba
-          $(".arrow-down-container").fadeIn();
-        }
-        lastScrollTop = st;
-      });
-    });
-  </script>
+  
 
   <!-- Script para inicializar el carrusel -->
 <script>
   // document.addEventListener('DOMContentLoaded', function () {
   var swiper = new Swiper('.swiper-container', {
     slidesPerView: 1,
-    spaceBetween: 1000, // Espacio entre las diapositivas
+    spaceBetween: 1000, 
     navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
