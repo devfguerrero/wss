@@ -4,6 +4,8 @@ body {
   padding: 0;
 }
 
+
+
 .navbar {
   background-color: #ffffff; /* Cambia esto al color que desees para la barra de navegación */
 }
@@ -45,8 +47,24 @@ body {
   transform: scaleX(1);
 }
 
+.index-body
+{
+  overflow-x: hidden;
+}
 
+.productos-body
+{
+  overflow-x: hidden;
+}
 
+.modalidades-body
+{
+  overflow-x: hidden;
+}
+.nosotros-body
+{
+  overflow-x: hidden;
+}
 /* .navbar-item {
   cursor: pointer;
   text-decoration: none;
@@ -387,29 +405,6 @@ width: 470px;
   opacity: 1;
 }
 
-/* Estilos para la navegación del carrusel */
-
-#funSeccion .swiper-button-next,
-#funSeccion .swiper-button-prev {
-  color: #007bff;
-  position: absolute; /* Agregar posición absoluta para centrar los botones */
-  top: 68%; /* Colocar los botones en la mitad superior del contenedor de la diapositiva */
-  transform: translateY(-50%); /* Centrar verticalmente los botones */
-}
-
-#funSeccion .swiper-button-next {
-  right: 40%; /* Ajustar la posición del botón siguiente */
-  top: 108%;
-  bottom: 0%;
-}
-
-#funSeccion .swiper-button-prev {
-  left: 40%; /* Ajustar la posición del botón anterior */
-  right: 15%; /* Ajustar la posición del botón siguiente */
-  top: 108%;
-  bottom: 0%;
-}
-
 /* Estilos para la cuarta sección */
 #cuartaSeccion .blue-line-custom {
   border: 2px solid rgba(23, 63, 114, 1); /* Cambiar color y grosor de la línea azul */
@@ -442,7 +437,7 @@ width: 470px;
 }
 
 #cuartaSeccion .image-container {
-  overflow: visible; /* Ocultar el desbordamiento de la imagen fuera del contenedor */
+  overflow: hidden; /* Ocultar el desbordamiento de la imagen fuera del contenedor */
   max-width: 100%; /* Asegurarse de que la imagen no sea más ancha que el contenedor */
   max-height: 100%;
   display: flex;
@@ -459,7 +454,7 @@ width: 470px;
   animation-duration: 20s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
-   
+  overflow: hidden;
 }
 
 #cuartaSeccion .flujo1 {
@@ -472,7 +467,7 @@ width: 470px;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
   position: absolute;
-  
+  overflow: hidden;
 }
 
 #cuartaSeccion .flujo3{
@@ -485,24 +480,28 @@ width: 470px;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
   position: absolute;
-  
+  overflow: hidden;
 }
 
 @keyframes girarb{
   from {
     transform: rotate(0deg);
+    overflow: hidden;
   }
   to {
     transform: rotate(360deg);
+    overflow: hidden;
   }
 }
 
 @keyframes girara {
   from {
     transform: rotate(0deg);
+    overflow: hidden;
   }
   to {
-    transform: rotate(-360deg);                           
+    transform: rotate(-360deg);
+    overflow: hidden;                           
   }           
 }
 
@@ -643,7 +642,9 @@ box-shadow: 0 0 20px 10px (#ff791b)
   }
 }
 
-
+.modal-backdrop{
+  z-index: -1;
+}
 
 .modal-content{
   border-radius: 30px;
@@ -1453,7 +1454,7 @@ color: #ffffff; /* Color del texto del enlace, puedes ajustarlo según tus prefe
 /*Modalidades - Tomografía Computarizada*/
 
 #tomografia {
-  padding-top: 30px;
+  padding-top: 25px;
   padding-bottom: 30px;
   background-color: rgba(23, 63, 114, 1);
   color: #ffffff;
@@ -1462,7 +1463,7 @@ color: #ffffff; /* Color del texto del enlace, puedes ajustarlo según tus prefe
 #tomografia img{
   width: 550px;
   height: 220px;
-  margin-bottom: -44%;
+  margin-top: 2%;
 }
 
 #tomografia h5{
@@ -1476,18 +1477,15 @@ color: #ffffff; /* Color del texto del enlace, puedes ajustarlo según tus prefe
   font-size: 1rem;
   text-align: justify;
 }
-
-/*Modalidades - Radiografía Computarizada*/
-
 #cr {
-  padding-top: 30px;
+  padding-top: 5px;
   padding-bottom: 10px;
 }
 
 #cr img{
   width: 550px;
   height: 220px;
-  margin-bottom: -47%;
+  margin-top: 5%;
 }
 
 #cr h5{
@@ -1635,8 +1633,9 @@ color: #000000;
 }
 
 .imagen-vision-mision {
-width: 63%; 
+width: 100%; 
 height: 20%;
+
 }
 
 .textos-bajo-imagen {
@@ -1652,7 +1651,7 @@ margin: 0 auto;
 font-size: 1.3rem;
 text-align: justify !important;
 font-family: 'Open Sans', sans-serif;
-margin-left: -18%;
+
 }
 
 /* Estilos para la sección de valores */
@@ -1705,64 +1704,144 @@ width: 100%;
 margin: 40px auto; 
 }
 
-#equipo {
-background-color: #dad5d560; 
-padding: 20px; 
-margin-top: -0.5%;
+.n_eq{
+  background-size: cover; 
+  background-position: center; 
+  background-image: url('images/electroestudio.png');
+
 }
 
-#equipo p {
-font-size: 1.3rem; 
-color: #000000; 
-text-align: center;
-font-family: 'open sans', sans-serif;
-margin-left: 0%;
+#nuestro_equipo{
+  background-color: #acacac;
 }
-#nuestroeq h2{
+
+#nuestro_equipo h1{
+color: rgba(23, 63, 114, 1) ;
 font-size: 3rem;
 text-align: center;
-font-family: 'Oswald', sans-serif;
-font-weight: bold;
-margin-top: -2%;
-font-style: normal;
-}
-
-#nuestroeq h1{
-color: rgba(23, 63, 114, 1) ;
-font-size: 1rem;
-text-align: center;
 font-family: 'Open Sans', sans-serif;
-font-weight: bold;
+font-weight: 700;
 }
 
-#nuestroeq p{
-font-size: 1rem;
-text-align: center;
+#nuestro_equipo p{
+font-size: 1.3rem;
+text-align: justify;
 font-family: 'Open Sans', sans-serif;
+color: #ff791b;
+font-weight: 500;
 }
 
-#nuestroeq img{
-width: 285px;
-height: 292px;
-padding-bottom: 20px;
-
+#nuestro_equipo .img-equipo1 {
+  max-width: 100%;
+  animation-name: girarb;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
 }
 
-.swiper-container-e {
-width: 100%;
-overflow: hidden;
+#nuestro_equipo .img-equipo2 {
+  width: 100%;
+  animation-name: girara;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
 }
 
-.swiper-slide {
+#nuestro_equipo .img-equipo3 {
+  width: 100%;
+  animation-name: girara;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+#nuestro_equipo .img-equipo4 {
+  width: 100%;
+  animation-name: girarb;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.img-engranaje1, .img-engranaje2, .img-engranaje3, .img-engranaje4 {
+  position: relative;
+  width: 622px;
+}
+
+.img-engranaje1 p{
+  color: #000;
+  
+}
+
+.img-engranaje2{
+  width: 400px;
+  transform: translate(0, 50%);
+}
+
+.img-engranaje3{
+  width: 390px;
+  transform: translate(38%, -1%);
+}
+
+.img-engranaje4{
+  width: 500px;
+  transform: translate(-10%, -5%);
+}
+
+.t-engranaje1{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 290px;
+}
+
+.t-engranaje2{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 200px;
+}
+
+.t-engranaje3{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 150px;
+}
+
+.t-engranaje4{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 230px;
+}
+
+.azuleq{
+  display: none;
+}
+
+.textoeq1{
+  display: none;
+}
+
+.textoeq2{
+  display: block;
+}
+
+#equipo p{
+  font-size: 1.3rem;
+color: #000000;
 text-align: center;
+font-family: 'opens sans', sans-serif;
 }
-
-.swiper-slide img {
-max-width: 100%;
-height: auto;
-}
-
-
 
 
 /* Contacto */ 
@@ -1791,8 +1870,6 @@ height: auto;
   font-weight: 700;
   font-size: 4rem;
 }
-
-
 
 #encabezadocontacto p{
 padding-top: 30px;
@@ -1939,7 +2016,6 @@ padding-bottom: 20px;
   margin-bottom: 25%;
 }
 .section-subheading1 {
-  margin-top: -10%;
   margin-bottom: 10%;
   text-align: left;
 }
@@ -2055,6 +2131,9 @@ padding-bottom: 20px;
   height: 30px;
 }
 
+#sextaSeccion .usuarios1 {
+  margin-top: 5%;
+}
 #tecnologias{
   margin-top: 100px;
 }
@@ -2167,13 +2246,47 @@ h2 {
   width: 100%;
   height: auto;
   margin-top: 49%;
-  margin-bottom: -24%;
 }
 #objetivo p {
   font-size: 1rem !important;
   margin-right: -15%;
   margin-top: -38%;
 }
+
+#nuestro_equipo p{
+  font-size: 1rem;
+  
+}
+
+.img-engranaje1, .img-engranaje2, .img-engranaje3, .img-engranaje4 {
+  position: relative;
+  width: 100%;
+  transform: unset;
+}
+
+.t-engranaje1, .t-engranaje2, .t-engranaje4{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 50%;
+}
+
+.textoeq1 {
+  display: none;
+}
+
+.textoeq2{
+  display: block;
+}
+
+.azuleq{
+  width: 90%;
+  display: block;
+  margin-left: 5%;
+}
+
 #equipo {
   background-color: #dad5d560; /* Cambia el color de fondo según tus preferencias */
   padding: 20px; /* Ajusta el relleno según tus preferencias */
@@ -2333,7 +2446,6 @@ h2 {
 #tomografia img{
   width: 550px;
   height: 220px;
-  margin-bottom: -20%;
 }
 
 #tomografia h5{
@@ -2341,7 +2453,7 @@ h2 {
   font-size: 2rem;
   font-weight: bold;
   margin-bottom: 5%;
-  margin-top: 25%;
+  margin-top: 5%;
 }
 
 #tomografia p{
@@ -2360,7 +2472,6 @@ h2 {
 #cr img{
   width: 550px;
   height: 220px;
-  margin-bottom: -47%;
 }
 
 #cr h5{
@@ -2368,7 +2479,7 @@ h2 {
   font-size: 2rem;
   font-weight: bold;
   margin-bottom: 5%;
-  margin-top: 50%;
+  margin-top: 5%;
 }
 
 #cr p{
@@ -2839,7 +2950,7 @@ h2 {
   /*Modalidades - Tomografía Computarizada*/
   
   #tomografia {
-    padding-top: 40px;
+    padding-top: 20px;
     padding-bottom: 40px;
     background-color: rgba(23, 63, 114, 1);
     color: #ffffff;
@@ -2848,15 +2959,13 @@ h2 {
   #tomografia img{
     width: 550px;
     height: 220px;
-    margin-bottom: -20%;
   }
   
   #tomografia h5{
     font-family: 'Open Sans', sans-serif; /* Fuente */
     font-size: 2rem;
     font-weight: bold;
-    margin-bottom: 5%;
-    margin-top: 25%;
+    margin-top: 3%;
   }
   
   #tomografia p{
@@ -2868,22 +2977,20 @@ h2 {
   /*Modalidades - Radiografía Computarizada*/
   
   #cr {
-    padding-top: 30px;
+    padding-top: 0px;
     padding-bottom: 30px;
   }
   
   #cr img{
     width: 550px;
     height: 220px;
-    margin-bottom: -20%;
   }
   
   #cr h5{
     font-family: 'Open Sans', sans-serif; /* Fuente */
     font-size: 2rem;
     font-weight: bold;
-    margin-bottom: 5%;
-    margin-top: 24%;
+    margin-top: 3%;
   }
   
   #cr p{
@@ -2935,6 +3042,7 @@ h2 {
   #valores h2 {
     margin-top: -5%;
     text-align: center;
+    margin-left: -55%;
   }
   
   .texto-lista {
@@ -2951,6 +3059,27 @@ h2 {
     font-size: 1.1rem;
     text-align: justify;
   }
+
+  #nuestro_equipo p{
+    font-size: 1rem;
+  }
+
+  .img-engranaje1, .img-engranaje2, .img-engranaje3, .img-engranaje4{
+    transform: unset;
+    width: 100%;
+  }
+
+  .t-engranaje1{
+    width: 50%;
+  }
+  .t-engranaje2{
+    width: 50%;
+  }
+
+  .t-engranaje4{
+    width: 50%;
+  }
+
   #equipo {
     background-color: #dad5d560; /* Cambia el color de fondo según tus preferencias */
     padding: 20px; /* Ajusta el relleno según tus preferencias */
@@ -2995,4 +3124,22 @@ h2 {
       width: 100%;
       margin-left: 23.2%;
     }
+    .index-body
+{
+  overflow-x: hidden;
+}
+
+.productos-body
+{
+  overflow-x: hidden;
+}
+
+.modalidades-body
+{
+  overflow-x: hidden;
+}
+.nosotros-body
+{
+  overflow-x: hidden;
+}
   }
