@@ -1323,182 +1323,47 @@ color: #ffffff; /* Color del texto del enlace, puedes ajustarlo según tus prefe
 
 /*Modalidades - Ultrasonido*/
 
-#ultrasonido {
-  
-  padding-top: 30px;
-  padding-bottom: 30px;
-}
 
-#ultrasonido img{
-  width: 550px;
-  height: 220px;
-  margin-bottom: 20px;
-}
 
-#ultrasonido h5{
-  font-family: 'Open Sans', sans-serif; /* Fuente */
-  font-size: 3rem;
-  font-weight: 700;
-}
-
-#ultrasonido p{
-  font-family: 'Open Sans', sans-serif; /* Fuente */
-  font-size: 1rem;
-  text-align: justify;
-}
-
-/*Modalidades - Radiografía Digital*/
-
-#dx{
-  padding-top: 30px;
-  padding-bottom: 30px;
+.card{
   background-color: rgba(23, 63, 114, 1);
   color: #ffffff;
+  border-radius: 5%;
+  width: 100%;
+  height: 100%;
 }
 
-#dx img{
-  width: 550px;
-  height: 220px;
-  margin-bottom: 20px;
+.card img{
+  border-top-left-radius: 5%;
+  border-top-right-radius: 5%;
 }
 
-#dx h5{
+.card h5{
   font-family: 'Open Sans', sans-serif; /* Fuente */
-  font-size: 3rem;
+  font-size: 2rem;
   font-weight: 700;
 }
 
-#dx p{
+.card h6{
+  font-family: 'Open Sans', sans-serif; /* Fuente */
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.card p{
   font-family: 'Open Sans', sans-serif; /* Fuente */
   font-size: 1rem;
   text-align: justify;
 }
 
-/*Modalidades - Electrocardiograma*/
-
-#electro {
-  padding-top: 30px;
-  padding-bottom: 30px;
+.card:hover{
+  background-color: #ffffff;
+  color: #000;
+  transform: scale(1.05);
+  transition: all 0.5s ease-in-out ;
 }
 
-#electro img{
-  width: 550px;
-  height: 220px;
-  margin-bottom: 20px;
-}
 
-#electro h5{
-  font-family: 'Open Sans', sans-serif; /* Fuente */
-  font-size: 3rem;
-  font-weight: 700;
-}
-
-#electro p{
-  font-family: 'Open Sans', sans-serif; /* Fuente */
-  font-size: 1rem;
-  text-align: justify;
-}
-
-/*Modalidades - Resonancia Magnetica*/
-
-#resonancia {
-  padding-top: 30px;
-  padding-bottom: 30px;
-  background-color: rgba(23, 63, 114, 1);
-  color: #ffffff;
-}
-
-#resonancia img{
-  width: 550px;
-  height: 220px;
-  margin-bottom: 20px;
-}
-
-#resonancia h5{
-  font-family: 'Open Sans', sans-serif; /* Fuente */
-  font-size: 3rem;
-  font-weight: 700;
-}
-
-#resonancia p{
-  font-family: 'Open Sans', sans-serif; /* Fuente */
-  font-size: 1rem;
-  text-align: justify;
-}
-
-/*Modalidades - Mamografía*/
-
-#mamografia {
-  padding-top: 30px;
-  padding-bottom: 30px;
-}
-
-#mamografia img{
-  width: 550px;
-  height: 220px;
-  margin-bottom: 20px;
-}
-
-#mamografia h5{
-  font-family: 'Open Sans', sans-serif; /* Fuente */
-  font-size: 3rem;
-  font-weight: 700;
-}
-
-#mamografia p{
-  font-family: 'Open Sans', sans-serif; /* Fuente */
-  font-size: 1rem;
-  text-align: justify;
-}
-
-/*Modalidades - Tomografía Computarizada*/
-
-#tomografia {
-  padding-top: 25px;
-  padding-bottom: 30px;
-  background-color: rgba(23, 63, 114, 1);
-  color: #ffffff;
-}
-
-#tomografia img{
-  width: 550px;
-  height: 220px;
-  margin-top: 2%;
-}
-
-#tomografia h5{
-  font-family: 'Open Sans', sans-serif; /* Fuente */
-  font-size: 3rem;
-  font-weight: 700;
-}
-
-#tomografia p{
-  font-family: 'Open Sans', sans-serif; /* Fuente */
-  font-size: 1rem;
-  text-align: justify;
-}
-#cr {
-  padding-top: 5px;
-  padding-bottom: 10px;
-}
-
-#cr img{
-  width: 550px;
-  height: 220px;
-  margin-top: 5%;
-}
-
-#cr h5{
-  font-family: 'Open Sans', sans-serif; 
-  font-size: 3rem;
-  font-weight: 700;
-}
-
-#cr p{
-  font-family: 'Open Sans', sans-serif; 
-  font-size: 1.1rem;
-  text-align: justify;
-}
 
 #modextra{
   background-color: #acacac;
@@ -2306,187 +2171,10 @@ h2 {
 .encabezado-mod h1{
   font-size: 3rem;
 }
-#ultrasonido {
-  
-  padding-top: 30px;
-  padding-bottom: 30px;
+.card{
+  margin-bottom: 30px;
 }
 
-#ultrasonido img{
-  width: 550px;
-  height: 220px;
-  margin-bottom: 20px;
-}
-
-#ultrasonido h5{
-  font-family: 'Open Sans', sans-serif; /* Fuente */
-  font-size: 2rem;
-  font-weight: bold;
-}
-
-#ultrasonido p{
-  font-family: 'Open Sans', sans-serif; /* Fuente */
-  font-size: 1.1rem;
-  text-align: justify;
-}
-
-/*Modalidades - Radiografía Digital*/
-
-#dx{
-  padding-top: 30px;
-  padding-bottom: 30px;
-  background-color: rgba(23, 63, 114, 1);
-  color: #ffffff;
-}
-
-#dx img{
-  width: 550px;
-  height: 220px;
-  margin-bottom: 20px;
-}
-
-#dx h5{
-  font-family: 'Open Sans', sans-serif; /* Fuente */
-  font-size: 2rem;
-  font-weight: bold;
-}
-
-#dx p{
-  font-family: 'Open Sans', sans-serif; /* Fuente */
-  font-size: 1.1rem;
-  text-align: justify;
-}
-
-/*Modalidades - Electrocardiograma*/
-
-#electro {
-  padding-top: 30px;
-  padding-bottom: 30px;
-}
-
-#electro img{
-  width: 550px;
-  height: 220px;
-  margin-bottom: 20px;
-}
-
-#electro h5{
-  font-family: 'Open Sans', sans-serif; /* Fuente */
-  font-size: 2rem;
-  font-weight: bold;
-}
-
-#electro p{
-  font-family: 'Open Sans', sans-serif; /* Fuente */
-  font-size: 1.1rem;
-  text-align: justify;
-}
-
-/*Modalidades - Resonancia Magnetica*/
-
-#resonancia {
-  padding-top: 30px;
-  padding-bottom: 30px;
-  background-color: rgba(23, 63, 114, 1);
-  color: #ffffff;
-}
-
-#resonancia img{
-  width: 550px;
-  height: 220px;
-  margin-bottom: 20px;
-}
-
-#resonancia h5{
-  font-family: 'Open Sans', sans-serif; /* Fuente */
-  font-size: 2rem;
-  font-weight: bold;
-}
-
-#resonancia p{
-  font-family: 'Open Sans', sans-serif; /* Fuente */
-  font-size: 1.1rem;
-  text-align: justify;
-}
-
-/*Modalidades - Mamografía*/
-
-#mamografia {
-  padding-top: 30px;
-  padding-bottom: 30px;
-}
-
-#mamografia img{
-  width: 550px;
-  height: 220px;
-  margin-bottom: 20px;
-}
-
-#mamografia h5{
-  font-family: 'Open Sans', sans-serif; /* Fuente */
-  font-size: 2rem;
-  font-weight: bold;
-}
-
-#mamografia p{
-  font-family: 'Open Sans', sans-serif; /* Fuente */
-  font-size: 1.1rem;
-  text-align: justify;
-}
-
-/*Modalidades - Tomografía Computarizada*/
-
-#tomografia {
-  padding-top: 40px;
-  padding-bottom: 40px;
-  background-color: rgba(23, 63, 114, 1);
-  color: #ffffff;
-}
-
-#tomografia img{
-  width: 550px;
-  height: 220px;
-}
-
-#tomografia h5{
-  font-family: 'Open Sans', sans-serif; /* Fuente */
-  font-size: 2rem;
-  font-weight: bold;
-  margin-bottom: 5%;
-  margin-top: 5%;
-}
-
-#tomografia p{
-  font-family: 'Open Sans', sans-serif; /* Fuente */
-  font-size: 1.1rem;
-  text-align: justify;
-}
-
-/*Modalidades - Radiografía Computarizada*/
-
-#cr {
-  padding-top: 30px;
-  padding-bottom: 30px;
-}
-
-#cr img{
-  width: 550px;
-  height: 220px;
-}
-
-#cr h5{
-  font-family: 'Open Sans', sans-serif; /* Fuente */
-  font-size: 2rem;
-  font-weight: bold;
-  margin-bottom: 5%;
-  margin-top: 5%;
-}
-
-#cr p{
-  font-family: 'Open Sans', sans-serif; /* Fuente */
-  font-size: 1.1rem;
-  text-align: justify;
-}
 #contactos iframe {
   height: 300px;
   width: 100%;
