@@ -2166,6 +2166,7 @@ h2 {
 .encabezado-mod img{
   max-width: 200vh;
   max-height: 100vh;
+  /*overflow: auto;*/
 }
 
 .encabezado-mod h1{
