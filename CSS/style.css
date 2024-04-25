@@ -1321,49 +1321,62 @@ color: #ffffff; /* Color del texto del enlace, puedes ajustarlo según tus prefe
   font-weight: 700;
 }
 
-/*Modalidades - Ultrasonido*/
+/*Modalidades - Cards*/
 
-
-
-.card{
-  background-color: rgba(23, 63, 114, 1);
-  color: #ffffff;
-  border-radius: 5%;
+#modalities img{
+  border-radius: 15px;
+  width:  540px;
+  height: 360px;
+  object-fit: fill;
 }
 
-.card img{
-  border-radius: 5%;
-  width: 100%;
-  filter: brightness(60%);
-  object-fit: cover;
-}
-
-.carousel-item{
-  margin: 0;
-}
-
-.card h5{
+#modalities h5{
   font-family: 'Open Sans', sans-serif; /* Fuente */
   font-size: 2rem;
   font-weight: 700;
 }
 
-.card h6{
+#modalities h6{
   font-family: 'Open Sans', sans-serif; /* Fuente */
   font-size: 1.5rem;
   font-weight: 700;
   
 }
 
+.carousel-item{
+  margin: 0;
+  transition: opacity 0.3s ease-in-out;
+  opacity: 0; 
+  
+}
 
-.card:hover{
-  background-color: #ffffff;
+.carousel-item.active {
+  opacity: 1; 
+  transition: opacity 0.3s ease-in-out;
+}
+
+.texto-carrusel{
+  background-color: rgba(0, 0, 0, 0.541);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+}
+
+.texto-carrusel h5, .texto-carrusel h6{
+  color: #ffffff;
+  text-align: center;
+}
+
+.texto-carrusel:hover h5, .texto-carrusel:hover h6{
   color: #ff791b;
   transform: scale(1.05);
   transition: all 0.5s ease-in-out ;
 }
 
-
+/*Modalidad Extra Estilos CSS*/
 
 #modextra{
   background-color: #acacac;
@@ -2031,6 +2044,12 @@ margin-left: -6%;
 h2 {
   font-size: 1.7rem;
 }
+
+#modalities img{
+  border-radius: 5%;
+  width:  100%;
+}
+
 .linea-azul2 {
   border: 2px solid rgba(23, 63, 114, 1);
   width: 110%;
