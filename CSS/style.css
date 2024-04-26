@@ -1336,23 +1336,16 @@ color: #ffffff; /* Color del texto del enlace, puedes ajustarlo según tus prefe
   font-weight: 700;
 }
 
-#modalities h6{
-  font-family: 'Open Sans', sans-serif; /* Fuente */
-  font-size: 1.5rem;
-  font-weight: 700;
-  
-}
 
 .carousel-item{
   margin: 0;
-  transition: opacity 0.3s ease-in-out;
   opacity: 0; 
   
 }
 
 .carousel-item.active {
   opacity: 1; 
-  transition: opacity 0.3s ease-in-out;
+  
 }
 
 .texto-carrusel{

@@ -66,7 +66,6 @@
   <div class="container" data-aos="fade-right">
     <div class="row">
       <div class="col-xl-6 col-md-6 col-sm-12">
-        
           <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="3000">
             <div class="carousel-inner" style="width: 100%; height: 100%; display: flex; justify-content: center; align-items: center;">
               <div class="texto-carrusel" style="z-index: 3; position: absolute;">
@@ -74,7 +73,7 @@
                 
               </div>
                 <div class="carousel-item active">
-                    <img src="images/ultrasonido.jpg" class="d-block w-100" alt="Ultrasonido">
+                    <img src="images/ultrasonido.jpg" class="d-block w-100 img-fluid" alt="Ultrasonido">
                 </div>
                 <div class="carousel-item">
                     <img src="images/ultrasonido2.jpg" class="d-block w-100" alt="Ultrasonido 2">
@@ -418,3 +417,9 @@
   <script>
     AOS.init();
   </script>
+<script>
+ $('.carousel').carousel({
+    interval: 3000, // Intervalo entre diapositivas en milisegundos (3 segundos)
+    wrap: true // Repetir el carrusel automáticamente
+  });
+</script>
