@@ -1328,6 +1328,7 @@ color: #ffffff; /* Color del texto del enlace, puedes ajustarlo según tus prefe
   width:  540px;
   height: 360px;
   object-fit: fill;
+  filter: brightness(60%);
 }
 
 #modalities h5{
@@ -1345,18 +1346,17 @@ color: #ffffff; /* Color del texto del enlace, puedes ajustarlo según tus prefe
 
 .carousel-item{
   margin: 0;
-  transition: opacity 0.3s ease-in-out;
+  
   opacity: 0; 
   
 }
 
 .carousel-item.active {
   opacity: 1; 
-  transition: opacity 0.3s ease-in-out;
 }
 
 .texto-carrusel{
-  background-color: rgba(0, 0, 0, 0.541);
+  
   width: 100%;
   height: 100%;
   display: flex;
@@ -1657,7 +1657,7 @@ font-weight: 500;
 }
 
 .img-engranaje3{
-  width: 390px;
+  width: 399px;
   transform: translate(38%, -1%);
 }
 
@@ -1671,7 +1671,6 @@ font-weight: 500;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  text-align: center;
   width: 290px;
 }
 
@@ -1680,7 +1679,6 @@ font-weight: 500;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  text-align: center;
   width: 200px;
 }
 
@@ -1689,8 +1687,7 @@ font-weight: 500;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  text-align: center;
-  width: 150px;
+  width: 190px;
 }
 
 .t-engranaje4{
@@ -1698,7 +1695,6 @@ font-weight: 500;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  text-align: center;
   width: 230px;
 }
 
@@ -2048,6 +2044,7 @@ h2 {
 #modalities img{
   border-radius: 5%;
   width:  100%;
+  margin-bottom: 30px;
 }
 
 .linea-azul2 {
