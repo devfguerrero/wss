@@ -1478,6 +1478,7 @@ color: #ffffff; /* Color del texto del enlace, puedes ajustarlo según tus prefe
   font-family: 'Oswald', sans-serif;
   font-weight: 700;
   font-size: 4rem;
+  margin-top: -134%;
 }
 
 /* Estilos para la sección visionMision */
@@ -2086,6 +2087,10 @@ h2 {
   width: 100%;
   margin: 0 auto;
   margin-top: 10%;
+}
+
+#nosotros h1 {
+  margin-top: -75%;
 }
 
 /* Estilos para la sección de valores */
@@ -2845,5 +2850,8 @@ h2 {
 .nosotros-body
 {
   overflow-x: hidden;
+}
+#nosotros h1 {
+  margin-top: -80%;
 }
   }
